@@ -7,13 +7,15 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\s_null</sprite>
+    <sprite>sprites\s_mokou</sprite>
+    <sprite>sprites\s_black</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\c_null.gml</script>
     <script>scripts\c_input.gml</script>
-    <script>scripts\c_platformer.gml</script>
+    <script>scripts\c_standard.gml</script>
     <script>scripts\console_log.gml</script>
     <script>scripts\draw_circle_width.gml</script>
     <script>scripts\get.gml</script>
@@ -22,9 +24,16 @@
     <script>scripts\c_txtcommon.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\o_view</object>
+    <object>objects\IMMORTALIZE</object>
+    <object>objects\o_collide</object>
+    <object>objects\o_solid</object>
     <object>objects\o_textbox</object>
+    <object>objects\o_view</object>
+    <object>objects\o_slope</object>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\the_void</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>

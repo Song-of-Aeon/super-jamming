@@ -40,29 +40,21 @@ if place_meeting(x + hspd, y, o_slope) {
 
 
 if vspd < 0 {
-    if (r_s) {
+    if (jumprel) {
         vspd = vspd / 2;
     }
 }
 
 if vspd = 0 {
     if !(shift) {
-        if(enabled){
-            grav = .28;
-        } else {
-            grav = .14;
-        }
+        grav = .14;
     } else {
-        if(enabled){
-            grav = .2;
-        } else {
-            grav = .1;
-        }
+        grav = .1;
     }
 }
 
 if aerial = true {
-    sprite_index = s_air;
+    //prite_index = s_air;
 }
 
 //ud collision
@@ -75,7 +67,7 @@ if !place_meeting(x, y + 1, o_collide) {
 } else {
     leniance = 5;
     acc = .3;
-    sprite_index = s_ground;
+    //sprite_index = s_ground;
     hspd = lerp(hspd, 0, frict);
     aerial = false; 
     y = floor(y);
@@ -117,8 +109,8 @@ if (up) {
     dir = 1;
 }
 
-if (((!left and !right)or hspd == 0 ) and !aerial) and !keyboard_check(vk_down) {
-    sprite_index = s_neutral;
+if (((!left && !right) || hspd = 0 ) && !aerial) && !keyboard_check(vk_down) {
+    //sprite_index = s_neutral;
 }
 
 if(!aerial){
@@ -132,7 +124,7 @@ if(!aerial){
 //the actual going
 
 if leniance > 0 {
-    if (k_s) {
+    if (jump) {
         if !(shift) {
             vspd = jspd;
             leniance = 0;
