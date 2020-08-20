@@ -85,6 +85,14 @@ if place_meeting(xx, yy + vspd, o_collide) {
 
 //directions and sprites
 
+if (down) {
+    dir = 2;
+}
+
+if (up) {
+    dir = 0;
+}
+
 if (right) {
     dir = 0;
     if(image_xscale == 1){
@@ -101,13 +109,6 @@ if (left) {
     image_xscale = 1;
 }
 
-if (down) {
-    dir = 2;
-}
-
-if (up) {
-    dir = 0;
-}
 
 if (((!left && !right) || hspd = 0 ) && !aerial) && !keyboard_check(vk_down) {
     sprite_index = neutral;
@@ -142,7 +143,7 @@ if attack && lv >= 1 && ((!aerial && lv < 3) || lv = 3) {
     sprite_index = attacking;
     image_index = 0;
     hspd = hspd/4;
-    instance_create(x+(dir-1)*64, y, o_afterimage);
+    instance_create(x+(dir-1)*64, y-8, o_afterimage);
 }
 
 if dash && lv >= 1 {
@@ -150,7 +151,7 @@ if dash && lv >= 1 {
     state = c_dash;
     vspd = vspd/2;
     hspd = -(dir-1)*6;
-    instance_create(x+(dir-1)*64, y, o_afterimage);
+    instance_create(x+(dir-1)*64, y-8, o_afterimage);
 }
 
 if !(shift) {

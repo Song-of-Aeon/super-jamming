@@ -21,6 +21,7 @@
     <sprite>sprites\s_dash</sprite>
     <sprite>sprites\s_neutral2</sprite>
     <sprite>sprites\s_attack2</sprite>
+    <sprite>sprites\s_firespirit</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>

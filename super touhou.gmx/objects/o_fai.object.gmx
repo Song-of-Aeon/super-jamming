@@ -29,6 +29,7 @@
 x = view_xview;
 y = view_yview;
 if image_alpha &lt;= 0 {
+    //IMMORTALIZE.state = c_standard;
     instance_destroy();
 }
 </string>

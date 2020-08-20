@@ -52,6 +52,8 @@
 if image_alpha &gt;= 1 {
     IMMORTALIZE.x = 50;
     IMMORTALIZE.y = 50;
+    IMMORTALIZE.xx = 50;
+    IMMORTALIZE.yy = 50;
     room_goto_next();
     instance_create(0, 0, o_fai);
     instance_destroy();
