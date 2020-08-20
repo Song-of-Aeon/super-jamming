@@ -32,6 +32,12 @@ vec3 increment(vec3 inc, float amount2){
     return vec3(red,green,blue);
 }
 
+vec3 realincrement(vec3 inc,float amount3){
+    float red = inc.r - mod(inc.r , amount3);
+    float green = inc.g - mod(inc.g , amount3);
+    float blue = inc.b-mod(inc.b , amount3);
+    return vec3(red,green,blue);
+}
 void main()
 {
     vec4 color = texture2D(gm_BaseTexture,v_vTexcoord);
