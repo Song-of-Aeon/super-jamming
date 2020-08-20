@@ -26,7 +26,11 @@
     <script>scripts\txt_.gml</script>
     <script>scripts\c_txtcommon.gml</script>
     <script>scripts\c_controls.gml</script>
-    <script>scripts\c_hitbox_save.gml</script>
+    <scripts name="hitbox">
+      <script>scripts\c_hitbox_save.gml</script>
+      <script>scripts\c_hitbox_exists.gml</script>
+      <script>scripts\c_hitbox_create.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\IMMORTALIZE</object>
@@ -38,6 +42,7 @@
     <object>objects\HITBOXMAKER</object>
     <object>objects\Scroll_bar_hitboxmaker</object>
     <object>objects\o_fakeHit_box</object>
+    <object>objects\o_hitbox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\hitbox_maker</room>

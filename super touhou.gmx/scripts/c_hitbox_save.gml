@@ -17,6 +17,6 @@ for(i = 0; i < instance_number(o_fakeHit_box); i++){
 var str = json_encode(hitboxlist);
 console_log(str);
 //ds_list_destroy(hitboxlist);
-var file = file_text_open_write(working_directory+sprite_get_name(HITBOXMAKER.currentSprite)+".txt");
+var file = file_text_open_write(working_directory+sprite_get_name(HITBOXMAKER.currentSprite)+".json");
 file_text_write_string(file,str);
 file_text_close(file);
