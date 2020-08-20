@@ -3,7 +3,7 @@
   <spriteName>s_neutral</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-2</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -46,8 +46,12 @@ amount = 2.0;
 acc = .3;
 hp = 3;
 inv = false;
-dashtimer = 0;
+endtimer = 0;
 dashend = c_standard;
+air = s_neutral;
+ground = s_neutral;
+neutral = s_neutral;
+attacking = s_neutral;
 
 
 lv = 0; //Level of Vitality, ya see
@@ -107,7 +111,18 @@ amount/=1.2;
 if(keyboard_check(vk_f3)){
 amount*=1.2;
 }
-console_log(amount);
+
+if lv = 3 {
+    air = s_neutral2;
+    ground = s_neutral2;
+    neutral = s_neutral2;
+    attacking = s_attack2;
+} else {
+    air = s_neutral;
+    ground = s_neutral;
+    neutral = s_neutral;
+    attacking = s_neutral;
+}
 </string>
           </argument>
         </arguments>

@@ -19,6 +19,8 @@
     <sprite>sprites\s_neutral</sprite>
     <sprite>sprites\s_textbox</sprite>
     <sprite>sprites\s_dash</sprite>
+    <sprite>sprites\s_neutral2</sprite>
+    <sprite>sprites\s_attack2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -30,12 +32,15 @@
     <script>scripts\c_input.gml</script>
     <script>scripts\c_standard.gml</script>
     <script>scripts\c_dash.gml</script>
+    <script>scripts\c_attack.gml</script>
     <script>scripts\c_lock.gml</script>
+    <script>scripts\c_drinking.gml</script>
     <script>scripts\console_log.gml</script>
     <script>scripts\draw_circle_width.gml</script>
     <script>scripts\get.gml</script>
     <script>scripts\ds_grid_swap_columns.gml</script>
     <script>scripts\txt_.gml</script>
+    <script>scripts\txt_drink1.gml</script>
     <script>scripts\txt_test.gml</script>
     <script>scripts\c_txtcommon.gml</script>
     <script>scripts\c_controls.gml</script>
@@ -45,6 +50,7 @@
       <script>scripts\c_hitbox_create.gml</script>
     </scripts>
     <script>scripts\c_cutscenes1.gml</script>
+    <script>scripts\c_cutscenes2.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\z_test.shader</shader>
@@ -73,6 +79,8 @@
     <object>objects\o_spikes</object>
     <object>objects\o_cutscene</object>
     <object>objects\o_enemy_parent</object>
+    <object>objects\o_chasers</object>
+    <object>objects\o_afterimage</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mountain_trail</room>

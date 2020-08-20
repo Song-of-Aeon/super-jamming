@@ -2,6 +2,10 @@
 
 //lr movement
 
+if(abs(hspd) < 0.2 and !aerial){ //. stopping it from bullshitting like funny
+    hspd = 0;
+}
+
 
 
 //lr collision
@@ -31,41 +35,24 @@ if place_meeting(xx + hspd, yy, o_slope) {
 
 
 
-if vspd < 0 {
-    if (jumprel) {
-        vspd = vspd / 2;
-    }
-}
 
-if vspd = 0 {
-    if !(shift) {
-        grav = .2;
-    } else {
-        grav = .15;
-    }
-}
 
 if aerial = true {
-    sprite_index = air;
+    prite_index = air;
 }
 
 //ud collision
 if !place_meeting(xx, yy + 1, o_collide) {
     vspd += grav;
     leniance -= .5;
-    if lv = 1 {
-        hspd = lerp(hspd, 0, frict/3);
-    } else {
-        vspd = 0;
-    }
+    hspd = lerp(hspd, 0, frict/2);
     aerial = true;
-    grav = .2;
+    grav = .14;
 } else {
     leniance = 5;
     acc = .3;
     sprite_index = ground;
-    if lv = 1 
-        hspd = lerp(hspd, 0, frict/3);
+    hspd = lerp(hspd, 0, frict);
     aerial = false; 
     yy = floor(yy);
     vspd = 0;
@@ -80,26 +67,21 @@ if place_meeting(xx, yy + vspd, o_collide) {
 }
 
 
+//directions and sprites
 
 
 
-
+if(!aerial){
+    image_speed = abs(hspd/13);
+    if hspd == 0 {
+      image_index = 0;
+    }
+    
+}
 
 //the actual going
 
-if leniance > 0 {
-    if jump {
-        dashend = "jump";
-    }
-}
 
-if attack /*and also probably cooldown or something*/ {
-    //dashend = ;
-}
-
-if dash && lv >= 2 {
-    dashend = c_dash;
-}
 
 
     xx += hspd;
@@ -110,22 +92,14 @@ yy = floor(yy)
 x = floor(xx);
 y = floor(yy);
 
-
-image_speed = abs(hspd/13);
-sprite_index = s_dash;
-endtimer--;
-if endtimer <= 0 {
-    if dashend = "jump" && leniance > 0 {
-        if !(shift) {
-            vspd = jspd;
-            leniance = 0;
-        } else {
-            vspd = .5 * jspd;
-            leniance = 0;
-        }
-        state = c_standard;
-    } else {
-        state = dashend;
-    }
-    dashend = c_standard;
+if(keyboard_check_pressed(vk_f1)){
+    c_hitbox_create(id,"test");
 }
+
+sprite_index = s_drinking;
+
+if image_index = "whatever" {
+state = c_standard;
+}
+
+//image_speed = 1;

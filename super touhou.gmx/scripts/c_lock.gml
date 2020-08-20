@@ -38,7 +38,7 @@ if place_meeting(xx + hspd, yy, o_slope) {
 
 
 if aerial = true {
-    //prite_index = s_air;
+    prite_index = air;
 }
 
 //ud collision
@@ -51,7 +51,7 @@ if !place_meeting(xx, yy + 1, o_collide) {
 } else {
     leniance = 5;
     acc = .3;
-    //sprite_index = s_ground;
+    sprite_index = ground;
     hspd = lerp(hspd, 0, frict);
     aerial = false; 
     yy = floor(yy);

@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>o_damage</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha = 0;
+            <string>x = -640;
+y = 0;
+countdown = 1200;
 </string>
           </argument>
         </arguments>
@@ -48,15 +50,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha += .1;
-if image_alpha &gt;= 1 {
-    IMMORTALIZE.x = 50;
-    IMMORTALIZE.y = 50;
-    room_goto_next();
-    instance_create(0, 0, o_fai);
-    instance_destroy();
+            <string>countdown--;
+if countdown &lt;= 0 {
+    x += 3;
 }
-
 </string>
           </argument>
         </arguments>

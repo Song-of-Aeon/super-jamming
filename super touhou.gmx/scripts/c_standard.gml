@@ -54,7 +54,7 @@ if vspd = 0 {
 }
 
 if aerial = true {
-    //prite_index = s_air;
+    sprite_index = air;
 }
 
 //ud collision
@@ -67,7 +67,7 @@ if !place_meeting(xx, yy + 1, o_collide) {
 } else {
     leniance = 5;
     acc = .3;
-    //sprite_index = s_ground;
+    sprite_index = ground;
     hspd = lerp(hspd, 0, frict);
     aerial = false; 
     yy = floor(yy);
@@ -110,16 +110,16 @@ if (up) {
 }
 
 if (((!left && !right) || hspd = 0 ) && !aerial) && !keyboard_check(vk_down) {
-    sprite_index = s_neutral;
+    sprite_index = neutral;
 } else if !aerial {
     image_speed = abs(hspd/13);
-    //sprite_index = s_ground;
+    sprite_index = ground;
     if hspd == 0 {
       image_index = 0;
     }
     
 } else {
-    //sprite_index = s_air;
+    sprite_index = air;
 }
 
 //the actual going
@@ -136,15 +136,21 @@ if leniance > 0 {
     }
 }
 
-if attack && lv >= 1 /*and also probably cooldown or something*/ {
-    
+if attack && lv >= 1 && ((!aerial && lv < 3) || lv = 3) {
+    endtimer = 20;
+    state = c_attack;
+    sprite_index = attacking;
+    image_index = 0;
+    hspd = hspd/4;
+    instance_create(x+(dir-1)*64, y, o_afterimage);
 }
 
 if dash && lv >= 1 {
-    dashtimer = 20;
+    endtimer = 20;
     state = c_dash;
     vspd = vspd/2;
     hspd = -(dir-1)*6;
+    instance_create(x+(dir-1)*64, y, o_afterimage);
 }
 
 if !(shift) {
