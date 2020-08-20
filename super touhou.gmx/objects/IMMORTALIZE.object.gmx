@@ -42,6 +42,7 @@ xx = x;
 yy = y;
 
 amount = 2.0;
+size = 1;
 
 acc = .3;
 hp = 3;
@@ -106,10 +107,10 @@ hput = right - left;
 vput = down - up;
 script_execute(state);
 if(keyboard_check(vk_f2)){
-amount/=1.2;
+size/=1.2;
 }
 if(keyboard_check(vk_f3)){
-amount*=1.2;
+size*=1.2;
 }
 
 if lv = 3 {
@@ -145,7 +146,7 @@ if lv = 3 {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>/*
 var surf = surface_create(surface_get_width(application_surface),surface_get_height(application_surface));
 surface_set_target(surf);
 
@@ -154,10 +155,10 @@ surface_set_target(surf);
 
 draw_surface(application_surface,0,0);
 shader_reset();*/
-
+/*
 shader_set(z_test);
 var uniSize = shader_get_uniform(z_test,"size");
-shader_set_uniform_f(uniSize,5+random_range(-0.5,0.5));
+shader_set_uniform_f(uniSize,size);
 var uniAmount = shader_get_uniform(z_test,"amount");
 shader_set_uniform_f(uniAmount,amount);
 draw_surface(application_surface,0,0);
@@ -167,7 +168,7 @@ shader_reset();
 
 surface_reset_target();
 draw_surface(surf,0,0);
-surface_free(surf);
+surface_free(surf);*/
 </string>
           </argument>
         </arguments>
@@ -221,6 +222,33 @@ if keyboard_check_pressed(ord("L")) {
             <kind>1</kind>
             <string>draw_text(30, 30, "hp: " + string(hp));
 draw_text(30, 50, "lv: " + string(lv));
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+draw_set_alpha(0.1);
+draw_set_color(c_white);
+draw_circle(x,y,100,false);
+draw_set_alpha(1.0);
 </string>
           </argument>
         </arguments>
