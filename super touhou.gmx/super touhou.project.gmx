@@ -15,7 +15,9 @@
     <sprite>sprites\s_save_icon</sprite>
     <sprite>sprites\s_hitbox</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\c_null.gml</script>
@@ -34,6 +36,11 @@
       <script>scripts\c_hitbox_create.gml</script>
     </scripts>
   </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\z_test.shader</shader>
+    <shader type="GLSLES">shaders\weird_and_cool.shader</shader>
+    <shader type="GLSLES">shaders\z_test2.shader</shader>
+  </shaders>
   <objects name="objects">
     <object>objects\IMMORTALIZE</object>
     <object>objects\o_collide</object>
@@ -45,6 +52,7 @@
     <object>objects\Scroll_bar_hitboxmaker</object>
     <object>objects\o_fakeHit_box</object>
     <object>objects\o_hitbox</object>
+    <object>objects\o_enemy_parent</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\the_void</room>
