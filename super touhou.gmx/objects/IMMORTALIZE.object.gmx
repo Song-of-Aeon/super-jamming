@@ -41,7 +41,7 @@ frict = .1;
 xx = x;
 yy = y;
 
-amount = 1;
+amount = 2.0;
 
 acc = .3;
 hp = 3;
@@ -107,6 +107,7 @@ amount/=1.2;
 if(keyboard_check(vk_f3)){
 amount*=1.2;
 }
+console_log(amount);
 </string>
           </argument>
         </arguments>

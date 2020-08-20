@@ -26,18 +26,18 @@ float theEquation(float var){
     return pow((0.2*var),3.0) + pow((0.8*var),5.0);
 }
 vec3 increment(vec3 inc, float amount2){
-    float red = inc.r- mod(inc.r,pow(abs(inc.r*3.0),-amount));
-    float green = inc.g-mod(inc.g,pow(abs(inc.g*3.0),-amount));
-    float blue = inc.b-mod(inc.b,pow(abs(inc.b*3.0),-amount));
+    float red = inc.r- mod(inc.r,pow(inc.r*amount,-4.0));
+    float green = inc.g-mod(inc.g,pow(inc.g*amount,-4.0));
+    float blue = inc.b-mod(inc.b,pow(inc.b*amount,-4.0));
     return vec3(red,green,blue);
 }
 
 void main()
 {
     vec4 color = texture2D(gm_BaseTexture,v_vTexcoord);
-     /*if(1.0/distance(v_vTexcoord,vec2(0.5)) > size){
+     if(1.0/distance(v_vTexcoord,vec2(0.5)) > size){
         color = color + (color * vec4(0.2));
-        }*/
-    gl_FragColor = vec4(increment(color.rgb, 3.0),1.0);
+        }
+    gl_FragColor = vec4(increment(color.rgb, amount),1.0);
 }
 
