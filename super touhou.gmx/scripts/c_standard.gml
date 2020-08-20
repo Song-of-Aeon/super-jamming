@@ -14,24 +14,24 @@ if(abs(hspd) < 0.2 and !aerial){ //. stopping it from bullshitting like funny
 
 //lr collision
 
-if place_meeting(x + hspd, y, o_solid) {
+if place_meeting(xx + hspd, yy, o_solid) {
     var i = 0;
-    while !place_meeting(x + sign(hspd), y, o_solid) {
-        x += sign(hspd);
+    while !place_meeting(xx + sign(hspd), yy, o_solid) {
+        xx += sign(hspd);
         i++;
         if i > sprite_width { break; } 
     }
     hspd = 0;
 }
 
-if place_meeting(x + hspd, y, o_slope) {
+if place_meeting(xx + hspd, yy, o_slope) {
     yplus = 0;
-    while (place_meeting(x + hspd, y - yplus, o_slope) && yplus <= abs(1 * hspd)) yplus += 1;
-    if place_meeting(x + hspd, y - yplus, o_slope) {
-        while (!place_meeting(x + sign(hspd), y, o_slope)) x += sign(hspd);
+    while (place_meeting(xx + hspd, yy - yplus, o_slope) && yplus <= abs(1 * hspd)) yplus += 1;
+    if place_meeting(xx + hspd, yy - yplus, o_slope) {
+        while (!place_meeting(xx + sign(hspd), yy, o_slope)) xx += sign(hspd);
         hspd = 0;
     } else {
-        y -= yplus;
+        yy -= yplus;
     }
 }
 
@@ -58,7 +58,7 @@ if aerial = true {
 }
 
 //ud collision
-if !place_meeting(x, y + 1, o_collide) {
+if !place_meeting(xx, yy + 1, o_collide) {
     vspd += grav;
     leniance -= .5;
     hspd = lerp(hspd, 0, frict/2);
@@ -70,13 +70,13 @@ if !place_meeting(x, y + 1, o_collide) {
     //sprite_index = s_ground;
     hspd = lerp(hspd, 0, frict);
     aerial = false; 
-    y = floor(y);
+    yy = floor(yy);
     vspd = 0;
 }
 
-if place_meeting(x, y + vspd, o_collide) {
-    while !place_meeting(x, y + sign(vspd), o_collide) {
-        y += sign(vspd);
+if place_meeting(xx, yy + vspd, o_collide) {
+    while !place_meeting(xx, yy + sign(vspd), o_collide) {
+        yy += sign(vspd);
     }
     vspd = 0;
     
@@ -88,7 +88,7 @@ if place_meeting(x, y + vspd, o_collide) {
 if (right) {
     dir = 0;
     if(image_xscale == 1){
-        x++;
+        xx++;
     }
     image_xscale = -1;    
 }
@@ -96,7 +96,7 @@ if (right) {
 if (left) {
     dir = 2;
     if(image_xscale == -1){
-        x--;
+        xx--;
     }
     image_xscale = 1;
 }
@@ -136,14 +136,17 @@ if leniance > 0 {
 }
 
 if !(shift) {
-    x += hspd;
+    xx += hspd;
 } else {
-    x += hspd / 1.5;
+    xx += hspd / 1.5;
 }
 
 if !(shift) {
-    y += vspd;
+    yy += vspd;
 } else {
-    y += vspd / 1.1;
+    yy += vspd / 1.1;
 }
-
+//xx = floor(xx)
+yy = floor(yy)
+x = floor(xx);
+y = floor(yy);
