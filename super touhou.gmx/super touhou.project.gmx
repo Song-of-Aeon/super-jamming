@@ -9,6 +9,8 @@
     <sprite>sprites\s_null</sprite>
     <sprite>sprites\s_mokou</sprite>
     <sprite>sprites\s_black</sprite>
+    <sprite>sprites\sprite3</sprite>
+    <sprite>sprites\test</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -22,6 +24,7 @@
     <script>scripts\ds_grid_swap_columns.gml</script>
     <script>scripts\txt_.gml</script>
     <script>scripts\c_txtcommon.gml</script>
+    <script>scripts\c_controls.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\IMMORTALIZE</object>
@@ -30,8 +33,11 @@
     <object>objects\o_textbox</object>
     <object>objects\o_view</object>
     <object>objects\o_slope</object>
+    <object>objects\HITBOXMAKER</object>
+    <object>objects\Scroll_bar_hitboxmaker</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\hitbox_maker</room>
     <room>rooms\the_void</room>
   </rooms>
   <help>
