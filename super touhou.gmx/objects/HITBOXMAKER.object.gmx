@@ -30,6 +30,7 @@ progress = 0;
 zoom = 1;
 playing = false;
 image_speed = 2;
+//console_log(
 </string>
           </argument>
         </arguments>
