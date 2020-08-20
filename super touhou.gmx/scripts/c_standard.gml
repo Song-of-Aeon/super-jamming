@@ -150,3 +150,8 @@ if !(shift) {
 yy = floor(yy)
 x = floor(xx);
 y = floor(yy);
+
+if(keyboard_check_pressed(vk_f1)){
+    c_hitbox_create(id,"test");
+}
+//image_speed = 1;

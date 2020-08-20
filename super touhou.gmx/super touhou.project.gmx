@@ -45,8 +45,8 @@
     <object>objects\o_hitbox</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\hitbox_maker</room>
     <room>rooms\the_void</room>
+    <room>rooms\hitbox_maker</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
