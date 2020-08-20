@@ -43,6 +43,9 @@ yy = y;
 acc = .3;
 hp = 3;
 inv = false;
+dashtimer = 0;
+dashend = c_standard;
+
 
 lv = 0; //Level of Vitality, ya see
 </string>
@@ -95,6 +98,12 @@ inv = false;
 hput = right - left;
 vput = down - up;
 script_execute(state);
+if keyboard_check_pressed(ord("K")) {
+    lv++;
+}
+if keyboard_check_pressed(ord("L")) {
+    lv--;
+}
 </string>
           </argument>
         </arguments>
@@ -117,7 +126,8 @@ script_execute(state);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(30, 30, hp);
+            <string>draw_text(30, 30, "hp: " + string(hp));
+draw_text(30, 50, "lv: " + string(lv));
 </string>
           </argument>
         </arguments>
