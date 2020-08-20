@@ -1,14 +1,6 @@
 ///c_standard
 
 //lr movement
-if hput != 0 {
-    hspd += hput * acc;
-    hspd = clamp(hspd, -maxhspd, maxhspd);
-}
-
-if(abs(hspd) < 0.2 and !aerial){ //. stopping it from bullshitting like funny
-    hspd = 0;
-}
 
 
 
@@ -61,14 +53,19 @@ if aerial = true {
 if !place_meeting(xx, yy + 1, o_collide) {
     vspd += grav;
     leniance -= .5;
-    hspd = lerp(hspd, 0, frict/2);
+    if lv = 1 {
+        hspd = lerp(hspd, 0, frict/3);
+    } else {
+        vspd = 0;
+    }
     aerial = true;
     grav = .2;
 } else {
     leniance = 5;
     acc = .3;
     //sprite_index = s_ground;
-    hspd = lerp(hspd, 0, frict);
+    if lv = 1 
+        hspd = lerp(hspd, 0, frict/3);
     aerial = false; 
     yy = floor(yy);
     vspd = 0;
@@ -102,30 +99,48 @@ if (left) {
 }
 
 if (down) {
-    dir = 2;
+    dir = 3;
 }
 
 if (up) {
-    dir = 0;
+    dir = 1;
 }
 
-if (((!left && !right) || hspd = 0 ) && !aerial) && !keyboard_check(vk_down) {
-    sprite_index = s_neutral;
-} else if !aerial {
-    image_speed = abs(hspd/13);
-    //sprite_index = s_ground;
-    if hspd == 0 {
-      image_index = 0;
-    }
-    
-} else {
-    //sprite_index = s_air;
-}
+
+
 
 //the actual going
 
 if leniance > 0 {
-    if (jump) {
+    if jump {
+        dashend = "jump";
+    }
+}
+
+if attack /*and also probably cooldown or something*/ {
+    //dashend = ;
+}
+
+if dash && lv >= 2 {
+    dashtimer = 20;
+    dashend = c_dash;
+}
+
+
+    xx += hspd;
+
+    yy += vspd;
+//xx = floor(xx)
+yy = floor(yy)
+x = floor(xx);
+y = floor(yy);
+
+
+image_speed = abs(hspd/13);
+sprite_index = s_dash;
+dashtimer--;
+if dashtimer <= 0 {
+    if dashend = "jump" && leniance > 0 {
         if !(shift) {
             vspd = jspd;
             leniance = 0;
@@ -133,47 +148,9 @@ if leniance > 0 {
             vspd = .5 * jspd;
             leniance = 0;
         }
+        state = c_standard;
+    } else {
+        state = dashend;
     }
+    dashend = c_standard;
 }
-
-if attack && lv >= 1 /*and also probably cooldown or something*/ {
-    
-}
-
-if dash && lv >= 1 {
-    dashtimer = 20;
-    state = c_dash;
-    vspd = vspd/2;
-    hspd = -(dir-1)*6;
-}
-
-if !(shift) {
-    xx += hspd;
-} else {
-    xx += hspd / 1.5;
-}
-
-if !(shift) {
-    yy += vspd;
-} else {
-    yy += vspd / 1.1;
-}
-//xx = floor(xx)
-yy = floor(yy)
-x = floor(xx);
-y = floor(yy);
-
-if(keyboard_check_pressed(vk_f1)){
-    c_hitbox_create(id,"test");
-}
-
-if place_meeting(x, y, o_damage) && !inv {
-    hp--;
-    inv = true;
-    alarm[0] = 60;
-    image_alpha = .5;
-    vspd = -2;
-    //audio_play_sound(something);
-}
-
-//image_speed = 1;

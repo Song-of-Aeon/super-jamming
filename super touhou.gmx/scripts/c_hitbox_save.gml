@@ -1,8 +1,8 @@
 hitboxlist = ds_map_create();
-for(i = 0; i < instance_number(o_fakeHit_box); i++){
+for(i = 0; i < instance_number(o_fakehitbox); i++){
     console_log("pog");
     var anotherlist = ds_list_create()
-    var fakey = instance_find(o_fakeHit_box,i);
+    var fakey = instance_find(o_fakehitbox,i);
     ds_list_add(anotherlist, fakey.x-(view_wview/2) ,
     fakey.y-(view_hview/2) ,
     fakey.width ,

@@ -41,7 +41,7 @@ if(mouse_check_button_pressed(mb_left)){
     if(collision_point(mouse_x,mouse_y,HITBOXMAKER,false,false)){
     c_hitbox_save();
      } //.if hitting da save button
-    instance_create(mouse_x,mouse_y,o_fakeHit_box);
+    instance_create(mouse_x,mouse_y,o_fakehitbox);
 }
 //.right click on a hitbox to destroy everything under the hitbox, ctrl z within 5 seconds to reverse everything destroyed in the last 5 seconds
 //.press A to set the minimum active frame on any hitbox you are mousing over (no undo)
