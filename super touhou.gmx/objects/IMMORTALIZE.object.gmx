@@ -40,10 +40,9 @@ leniance = 0;
 frict = .1;
 xx = x;
 yy = y;
-<<<<<<< HEAD
 
 amount = 1;
-=======
+
 acc = .3;
 hp = 3;
 inv = false;
@@ -76,7 +75,6 @@ lv = 0; //Level of Vitality, ya see
             <kind>1</kind>
             <string>image_alpha = 1;
 inv = false;
->>>>>>> master
 </string>
           </argument>
         </arguments>
@@ -103,7 +101,6 @@ inv = false;
 hput = right - left;
 vput = down - up;
 script_execute(state);
-<<<<<<< HEAD
 if(keyboard_check(vk_f2)){
 amount/=1.2;
 }
@@ -178,14 +175,12 @@ surface_free(surf);
           <argument>
             <kind>1</kind>
             <string>draw_background(0,0,0);
-=======
 if keyboard_check_pressed(ord("K")) {
     lv++;
 }
 if keyboard_check_pressed(ord("L")) {
     lv--;
 }
->>>>>>> master
 </string>
           </argument>
         </arguments>

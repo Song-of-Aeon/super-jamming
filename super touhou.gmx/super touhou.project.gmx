@@ -45,14 +45,14 @@
     </scripts>
     <script>scripts\c_cutscenes1.gml</script>
   </scripts>
-  <fonts name="fonts">
-    <font>fonts\ft_martina</font>
-  </fonts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\z_test.shader</shader>
     <shader type="GLSLES">shaders\weird_and_cool.shader</shader>
     <shader type="GLSLES">shaders\z_test2.shader</shader>
   </shaders>
+  <fonts name="fonts">
+    <font>fonts\ft_martina</font>
+  </fonts>
   <objects name="objects">
     <object>objects\IMMORTALIZE</object>
     <object>objects\o_collide</object>
