@@ -78,6 +78,7 @@
     <object>objects\o_cutscene</object>
     <object>objects\o_enemy_parent</object>
     <object>objects\o_chasers</object>
+    <object>objects\o_afterimage</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mountain_trail</room>

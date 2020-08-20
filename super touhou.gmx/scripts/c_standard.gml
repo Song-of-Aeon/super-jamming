@@ -138,8 +138,11 @@ if leniance > 0 {
 
 if attack && lv >= 1 && ((!aerial && lv < 3) || lv = 3) {
     endtimer = 20;
-    state = c_dash;
+    state = c_attack;
+    sprite_index = attacking;
+    image_index = 0;
     hspd = hspd/4;
+    instance_create(x+(dir-1)*64, y, o_afterimage);
 }
 
 if dash && lv >= 1 {
@@ -147,6 +150,7 @@ if dash && lv >= 1 {
     state = c_dash;
     vspd = vspd/2;
     hspd = -(dir-1)*6;
+    instance_create(x+(dir-1)*64, y, o_afterimage);
 }
 
 if !(shift) {

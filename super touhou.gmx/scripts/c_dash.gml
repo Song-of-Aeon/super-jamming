@@ -80,31 +80,7 @@ if place_meeting(xx, yy + vspd, o_collide) {
 }
 
 
-//directions and sprites
 
-if (right) {
-    dir = 0;
-    if(image_xscale == 1){
-        xx++;
-    }
-    image_xscale = -1;    
-}
-
-if (left) {
-    dir = 2;
-    if(image_xscale == -1){
-        xx--;
-    }
-    image_xscale = 1;
-}
-
-if (down) {
-    dir = 3;
-}
-
-if (up) {
-    dir = 1;
-}
 
 
 

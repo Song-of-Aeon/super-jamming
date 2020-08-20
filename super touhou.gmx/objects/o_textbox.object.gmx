@@ -149,11 +149,7 @@ if choosing = 1 {
     }
 }
 if keyboard_check_pressed(vk_control) {
-    if choiceat[0] = "" || choiceno &gt; array_length_1d(choiceat) {
         instance_destroy();
-    } else {
-        message_current = choiceat[choiceno];
-    }
 }
 
 
