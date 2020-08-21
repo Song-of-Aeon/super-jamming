@@ -142,16 +142,20 @@ if attack && lv >= 1 && ((!aerial && lv < 3) || lv = 3) {
     state = c_attack;
     sprite_index = attacking;
     image_index = 0;
-    hspd = hspd/4;
-    instance_create(x+(dir-1)*64, y-8, o_afterimage);
+    hspd = hspd/3;
+    if lv >= 2 {
+        instance_create(x+(dir-1)*64, y-8, o_afterimage);
+    }
 }
 
 if dash && lv >= 1 {
-    endtimer = 20;
+    endtimer = 15;
     state = c_dash;
     vspd = vspd/2;
-    hspd = -(dir-1)*6;
-    instance_create(x+(dir-1)*64, y-8, o_afterimage);
+    hspd = -(dir-1)*8;
+    if lv >= 2 {
+        instance_create(x+(dir-1)*64, y-8, o_afterimage);
+    }
 }
 
 if !(shift) {

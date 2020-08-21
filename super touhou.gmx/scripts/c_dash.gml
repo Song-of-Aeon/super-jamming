@@ -110,11 +110,11 @@ yy = floor(yy)
 x = floor(xx);
 y = floor(yy);
 
-
+endtimer--;
 image_speed = abs(hspd/13);
 sprite_index = s_dash;
-endtimer--;
 if endtimer <= 0 {
+    thebounce = false;
     if dashend = "jump" && leniance > 0 {
         if !(shift) {
             vspd = jspd;
@@ -124,8 +124,25 @@ if endtimer <= 0 {
             leniance = 0;
         }
         state = c_standard;
+    } else if dashend = c_attack {
+        endtimer = 20;
+        state = c_attack;
+        sprite_index = attacking;
+        image_index = 0;
+        hspd = hspd/3;
+        if lv >= 2 {
+            instance_create(x+(dir-1)*64, y-8, o_afterimage);
+        }
+    } else if dashend = c_dash {
+        endtimer = 15;
+        state = c_dash;
+        vspd = vspd/2;
+        hspd = -(dir-1)*8;
+        if lv >= 2 {
+            instance_create(x+(dir-1)*64, y-8, o_afterimage);
+        }
     } else {
-        state = dashend;
+        state = c_standard;
     }
     dashend = c_standard;
 }

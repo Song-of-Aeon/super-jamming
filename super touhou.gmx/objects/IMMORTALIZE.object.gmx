@@ -53,6 +53,7 @@ air = s_neutral;
 ground = s_neutral;
 neutral = s_neutral;
 attacking = s_neutral;
+thebounce = false;
 
 
 lv = 0; //Level of Vitality, ya see
