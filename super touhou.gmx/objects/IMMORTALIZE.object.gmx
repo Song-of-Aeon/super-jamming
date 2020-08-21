@@ -40,6 +40,7 @@ leniance = 0;
 frict = .1;
 xx = x;
 yy = y;
+dir = 0;
 
 amount = 2.0;
 size = 1;

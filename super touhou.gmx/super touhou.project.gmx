@@ -78,11 +78,13 @@
     <sprite>sprites\s_firespirit</sprite>
     <sprite>sprites\s_weirdo</sprite>
     <sprite>sprites\s_fairy</sprite>
+    <sprite>sprites\s_titlecursor</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
     <background>background\background2</background>
     <background>background\background0</background>
+    <background>background\bk_title</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -139,12 +141,14 @@
     <object>objects\o_enemy_parent</object>
     <object>objects\o_chasers</object>
     <object>objects\o_afterimage</object>
+    <object>objects\o_title</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\the_void</room>
-    <room>rooms\hitbox_maker</room>
+    <room>rooms\title</room>
     <room>rooms\mountain_trail</room>
     <room>rooms\mountain2</room>
+    <room>rooms\the_void</room>
+    <room>rooms\hitbox_maker</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
