@@ -86,6 +86,9 @@ if(timer &gt; 1){ //.allow undo for a while
         timer = 0;
     }
 }
+else if (timer == 1){
+    instance_destroy();
+}
 if(keyboard_check_pressed(ord("S"))){
     if (mouse_x &gt; x and mouse_x &lt; x+width and mouse_y &gt; y and mouse_y &lt; y+height and active){
         activemax = ceil(sprite_get_number(HITBOXMAKER.currentSprite)*HITBOXMAKER.progress)

@@ -3,12 +3,20 @@
 var hitboxName = argument[1];
 var obj = argument[0];
 if(c_hitbox_exists(hitboxName)){
-    var file = file_text_open_read(working_directory+hitboxName+".json");
-    map = json_decode(file_text_readln(file));
+    if(file_exists("hitboxes\" + hitboxName + ".json")){
+    var file = file_text_open_read("hitboxes\" + hitboxName + ".json");
+    }
+    else if(file_exists(working_directory+hitboxName+".json")){
+        var file = file_text_open_read(working_directory+hitboxName+".json");
+    }
+    var text = file_text_readln(file);
+    map = json_decode(text);
+    file_text_close(file);
     for(i = 0; i < ds_map_size(map);i++){
         var list = map[? string(i)];
         var obj2 = instance_create(0,0,o_hitbox)
         with(obj2){
+        console_log(list);
             xx = list[|0];
             yy = list[|1];
             width = list[|2];

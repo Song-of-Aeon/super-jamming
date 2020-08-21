@@ -246,10 +246,11 @@ draw_text(30, 50, "lv: " + string(lv));
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_set_alpha(0.1);
+/*
+draw_set_alpha(0.1); //.failed attempt at lighting, maybe some other time.
 draw_set_color(c_white);
 draw_circle(x,y,100,false);
-draw_set_alpha(1.0);
+draw_set_alpha(1.0);*/
 </string>
           </argument>
         </arguments>

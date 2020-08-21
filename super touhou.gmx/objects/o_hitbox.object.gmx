@@ -56,8 +56,7 @@ x = parent.x+ xx;
 y = parent.y+yy;
 image_xscale = width;
 image_yscale = height;
-    
-progress += 1; //.change this dickhead
+progress += 0.20; //.change this dickhead
 if(progress &gt; activemin and progress &lt; activemax ){
     active = true;
 }
