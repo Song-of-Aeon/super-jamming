@@ -146,7 +146,6 @@
     <object>objects\o_title</object>
     <object>objects\o_hv</object>
     <object>objects\o_camerahook</object>
-    <object>objects\o_enemy_spirit</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\title</room>
