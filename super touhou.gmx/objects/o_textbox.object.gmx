@@ -90,6 +90,8 @@ choiceat[0] = "";
           <argument>
             <kind>1</kind>
             <string>c_input();
+x = view_xview+320;
+y = view_yview+280;
 if (characters &lt; message_length) &amp;&amp; choosing = 0 { 
     skip = jump;
     

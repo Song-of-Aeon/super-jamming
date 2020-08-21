@@ -94,10 +94,11 @@ if dash && lv >= 2 && endtimer <= 5 {
 
 sprite_index = attacking
 if image_index < 2 {
-    image_speed = .2;
+    image_speed = .3;
 } else {
-    image_speed = 0;
-    image_index = 4;
+if image_index = 0 {
+    image_index--;
+}
     if lv = 3 && !thebounce && !aerial && hput != 0 {
         hspd = hspd*1.5;
         vspd -= 1.5;

@@ -96,7 +96,7 @@ if(keyboard_check_pressed(vk_f1)){
     c_hitbox_create(id,"test");
 }
 
-sprite_index = s_drinking;
+//sprite_index = s_drinking;
 
 if image_index = "whatever" {
 state = c_standard;

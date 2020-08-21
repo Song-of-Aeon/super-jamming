@@ -51,6 +51,7 @@ countwo = 0;
           <argument>
             <kind>1</kind>
             <string>global.cutscenecount++;
+console_log(global.cutscenecount);
 </string>
           </argument>
         </arguments>
@@ -76,6 +77,9 @@ countwo = 0;
             <string>switch global.cutscenecount {
     case 0:
         c_cutscenes1();
+        break;
+    case 1:
+        c_cutscenes2();
         break;
 }
 </string>

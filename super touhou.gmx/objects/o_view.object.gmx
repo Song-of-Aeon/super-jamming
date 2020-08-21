@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>target = 0;
+global.cutscenecount = 0;
 </string>
           </argument>
         </arguments>
@@ -52,7 +53,7 @@
 x += (target.x - x) * .1;
 y += (target.y - y) * .1;
 
-global.cutscenecount = 0;
+
 </string>
           </argument>
         </arguments>

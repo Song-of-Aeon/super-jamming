@@ -124,11 +124,16 @@ if lv = 3 {
     ground = s_neutral2;
     neutral = s_neutral2;
     attacking = s_attack2;
+    damaged = s_damaged2
 } else {
     air = s_neutral;
     ground = s_neutral;
     neutral = s_neutral;
     attacking = s_neutral;
+    damaged = s_neutral;
+}
+if inv = true {
+    sprite_index = damaged;
 }
 </string>
           </argument>
