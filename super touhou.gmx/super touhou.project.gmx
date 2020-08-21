@@ -139,11 +139,12 @@
     <object>objects\o_enemy_parent</object>
     <object>objects\o_chasers</object>
     <object>objects\o_afterimage</object>
+    <object>objects\o_enemy_spirit</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\mountain_trail</room>
     <room>rooms\the_void</room>
     <room>rooms\hitbox_maker</room>
-    <room>rooms\mountain_trail</room>
     <room>rooms\mountain2</room>
   </rooms>
   <help>
