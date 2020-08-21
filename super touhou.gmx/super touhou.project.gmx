@@ -78,11 +78,13 @@
     <sprite>sprites\s_firespirit</sprite>
     <sprite>sprites\s_weirdo</sprite>
     <sprite>sprites\s_fairy</sprite>
+    <sprite>sprites\s_titlecursor</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
     <background>background\background2</background>
     <background>background\background0</background>
+    <background>background\bk_title</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -97,18 +99,20 @@
     <script>scripts\draw_circle_width.gml</script>
     <script>scripts\get.gml</script>
     <script>scripts\ds_grid_swap_columns.gml</script>
-    <script>scripts\txt_.gml</script>
-    <script>scripts\txt_drink1.gml</script>
-    <script>scripts\txt_test.gml</script>
-    <script>scripts\c_txtcommon.gml</script>
     <script>scripts\c_controls.gml</script>
     <scripts name="hitbox">
       <script>scripts\c_hitbox_save.gml</script>
       <script>scripts\c_hitbox_exists.gml</script>
       <script>scripts\c_hitbox_create.gml</script>
     </scripts>
-    <script>scripts\c_cutscenes1.gml</script>
-    <script>scripts\c_cutscenes2.gml</script>
+    <scripts name="dialogue and cutscenes">
+      <script>scripts\c_txtcommon.gml</script>
+      <script>scripts\txt_drink1.gml</script>
+      <script>scripts\txt_test.gml</script>
+      <script>scripts\txt_.gml</script>
+      <script>scripts\c_cutscenes1.gml</script>
+      <script>scripts\c_cutscenes2.gml</script>
+    </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\z_test.shader</shader>
@@ -139,13 +143,18 @@
     <object>objects\o_enemy_parent</object>
     <object>objects\o_chasers</object>
     <object>objects\o_afterimage</object>
+    <object>objects\o_title</object>
+    <object>objects\o_hv</object>
+    <object>objects\o_camerahook</object>
     <object>objects\o_enemy_spirit</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\title</room>
     <room>rooms\mountain_trail</room>
+    <room>rooms\mountain3</room>
+    <room>rooms\mountain2</room>
     <room>rooms\the_void</room>
     <room>rooms\hitbox_maker</room>
-    <room>rooms\mountain2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

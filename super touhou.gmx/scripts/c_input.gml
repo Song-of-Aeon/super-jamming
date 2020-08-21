@@ -5,6 +5,9 @@ left = keyboard_check(vk_left);
 up = keyboard_check(vk_up);
 down = keyboard_check(vk_down);
 
+upprs = keyboard_check_pressed(vk_up);
+downprs = keyboard_check_pressed(vk_down);
+
 shift = keyboard_check(vk_shift);
 jump = keyboard_check_pressed(ord("S")) + keyboard_check_pressed(ord("Z"));
 jumprel = keyboard_check_released(ord("S")) + keyboard_check_released(ord("Z"));

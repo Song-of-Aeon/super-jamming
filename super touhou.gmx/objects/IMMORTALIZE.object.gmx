@@ -40,6 +40,7 @@ leniance = 0;
 frict = .1;
 xx = x;
 yy = y;
+dir = 0;
 
 amount = 2.0;
 size = 1;
@@ -113,6 +114,10 @@ size/=1.2;
 if(keyboard_check(vk_f3)){
 size*=1.2;
 }
+
+maxhspd = 1.5+lv/.75;
+maxvspd = 6;
+jspd = -3.5-lv/2;
 
 if lv = 3 {
     air = s_neutral2;
