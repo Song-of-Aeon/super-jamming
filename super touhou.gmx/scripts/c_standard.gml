@@ -73,10 +73,11 @@ if !place_meeting(xx, yy + 1, o_collide) {
     yy = floor(yy);
     vspd = 0;
 }
+yy = floor(yy)
 
-if place_meeting(xx, yy + vspd, o_collide) {
-    while !place_meeting(xx, yy + sign(vspd), o_collide) {
-        yy += sign(vspd);
+if place_meeting(xx, yy + floor(vspd), o_collide) {
+    while !place_meeting(xx, yy + sign(floor(vspd)), o_collide) {
+        yy += sign(floor(vspd));
     }
     vspd = 0;
     
@@ -139,19 +140,12 @@ if leniance > 0 {
 
 
 
-if !(shift) {
-    xx += hspd;
-} else {
-    xx += hspd / 1.5;
-}
 
-if !(shift) {
+    xx += hspd;
     yy += vspd;
-} else {
-    yy += vspd / 1.1;
-}
+
 //xx = floor(xx)
-yy = floor(yy)
+
 x = floor(xx);
 y = floor(yy);
 
