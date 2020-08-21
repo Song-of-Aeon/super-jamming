@@ -80,12 +80,15 @@
     <sprite>sprites\s_fairy</sprite>
     <sprite>sprites\s_titlecursor</sprite>
     <sprite>sprites\s_damaged2</sprite>
+    <sprite>sprites\s_air</sprite>
+    <sprite>sprites\s_crouch</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
     <background>background\background2</background>
     <background>background\background0</background>
     <background>background\bk_title</background>
+    <background>background\bk_cave</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
