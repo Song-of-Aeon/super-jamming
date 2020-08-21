@@ -115,6 +115,10 @@ if(keyboard_check(vk_f3)){
 size*=1.2;
 }
 
+maxhspd = 1.5+lv/.75;
+maxvspd = 6;
+jspd = -3.5-lv/2;
+
 if lv = 3 {
     air = s_neutral2;
     ground = s_neutral2;

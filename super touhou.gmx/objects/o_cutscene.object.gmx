@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>goingdoing = 0;
+count = 0;
+countwo = 0;
 </string>
           </argument>
         </arguments>
