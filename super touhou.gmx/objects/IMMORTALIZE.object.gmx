@@ -117,20 +117,22 @@ size*=1.2;
 
 maxhspd = 1.5+lv/.75;
 maxvspd = 6;
-jspd = -3.5-lv/2;
+jspd = -4-lv/2;
 
 if lv = 3 {
     air = s_neutral2;
     ground = s_neutral2;
     neutral = s_neutral2;
     attacking = s_attack2;
-    damaged = s_damaged2
+    damaged = s_damaged2;
+    crouch = s_neutral2;
 } else {
-    air = s_neutral;
+    air = s_air;
     ground = s_neutral;
     neutral = s_neutral;
     attacking = s_neutral;
     damaged = s_neutral;
+    crouch = s_crouch;
 }
 if inv = true {
     sprite_index = damaged;

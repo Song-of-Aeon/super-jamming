@@ -55,6 +55,7 @@ if vspd = 0 {
 
 if aerial = true {
     sprite_index = air;
+    image_index = round(clamp(vspd, -4, 5))+4;
 }
 
 //ud collision
@@ -134,6 +135,7 @@ if leniance > 0 {
             vspd = .5 * jspd;
             leniance = 0;
         }
+        sprite_index = crouch;
     }
 }
 
