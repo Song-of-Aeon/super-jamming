@@ -81,7 +81,7 @@
     <sprite>sprites\s_neutral2</sprite>
     <sprite>sprites\s_attack2</sprite>
     <sprite>sprites\s_firespirit</sprite>
-    <sprite>sprites\s_weirdo</sprite>
+    <sprite>sprites\s_heartguy</sprite>
     <sprite>sprites\s_fairy</sprite>
     <sprite>sprites\s_titlecursor</sprite>
     <sprite>sprites\s_damaged2</sprite>
@@ -96,6 +96,10 @@
     <sprite>sprites\s_hit</sprite>
     <sprite>sprites\s_air2</sprite>
     <sprite>sprites\s_crouch2</sprite>
+    <sprite>sprites\s_tree1</sprite>
+    <sprite>sprites\s_tree2</sprite>
+    <sprite>sprites\s_three</sprite>
+    <sprite>sprites\s_tree4</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -180,10 +184,13 @@
     <object>objects\o_fairy</object>
     <object>objects\o_boss</object>
     <object>objects\o_music</object>
+    <object>objects\o_tree1</object>
+    <object>objects\o_tree2</object>
+    <object>objects\o_three</object>
+    <object>objects\o_tree4</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\cavern</room>
-    <room>rooms\sanzu</room>
     <room>rooms\mountain_trail</room>
     <room>rooms\mountain2</room>
     <room>rooms\mountain3</room>
@@ -194,6 +201,7 @@
     <room>rooms\fivest</room>
     <room>rooms\sixest</room>
     <room>rooms\reconsideration</room>
+    <room>rooms\sanzu</room>
     <room>rooms\the_void</room>
     <room>rooms\hitbox_maker</room>
     <room>rooms\title</room>
