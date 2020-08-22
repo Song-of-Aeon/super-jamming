@@ -1,4 +1,4 @@
-///c_hitbox_create(object,hitboxName)
+///c_hitbox_create(object,hitboxName, damage)
 /// object is object to attach to, this is where it gets image_speed, x and y, it sticks to the object;
 var hitboxName = argument[1];
 var obj = argument[0];
@@ -25,6 +25,7 @@ if(c_hitbox_exists(hitboxName)){
             activemax = list[|5];
         }
         obj2.parent = obj;
+        obj2.damage = argument[2]
     }
     ds_map_destroy(map);
 }
