@@ -212,8 +212,25 @@
     <instance objName="o_solid" x="1728" y="720" name="inst_5ECCEFD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_solid" x="1760" y="720" name="inst_231C59D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_solid" x="1984" y="720" name="inst_D3834852" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_spikes" x="624" y="688" name="inst_4983E11E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_spikes" x="656" y="688" name="inst_576C4F54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_spikes" x="688" y="688" name="inst_146F62C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_spikes" x="720" y="688" name="inst_9F0BB2FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_spikes" x="752" y="688" name="inst_BF1B4D88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_spikes" x="1696" y="688" name="inst_A17FD1F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_spikes" x="1728" y="688" name="inst_E02C30C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_spikes" x="1760" y="688" name="inst_882C9033" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
+    <tile bgName="prt_spikes" x="592" y="672" w="32" h="32" xo="0" yo="64" id="10000905" name="inst_D990F2D1" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="prt_spikes" x="752" y="672" w="32" h="32" xo="64" yo="64" id="10000906" name="inst_44BABCC6" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="prt_spikes" x="624" y="672" w="32" h="32" xo="32" yo="64" id="10000907" name="inst_B43E9767" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="prt_spikes" x="656" y="672" w="32" h="32" xo="32" yo="64" id="10000908" name="inst_63426923" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="prt_spikes" x="688" y="672" w="32" h="32" xo="32" yo="64" id="10000909" name="inst_86C589A4" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="prt_spikes" x="720" y="672" w="32" h="32" xo="32" yo="64" id="10000910" name="inst_62268B34" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="prt_spikes" x="1680" y="672" w="32" h="32" xo="32" yo="64" id="10000911" name="inst_833EAC56" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="prt_spikes" x="1712" y="672" w="32" h="32" xo="32" yo="64" id="10000912" name="inst_CE08B3BC" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="prt_spikes" x="1744" y="672" w="32" h="32" xo="64" yo="64" id="10000913" name="inst_6669C02C" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_cave" x="-16" y="496" w="32" h="32" xo="32" yo="96" id="10000468" name="inst_B1DEBE0D" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_cave" x="48" y="496" w="32" h="32" xo="32" yo="96" id="10000469" name="inst_C7703A39" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_cave" x="112" y="496" w="32" h="32" xo="32" yo="96" id="10000470" name="inst_4FC0A2C0" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -94,6 +94,8 @@
     <background>background\bk_title</background>
     <background>background\prt_cave</background>
     <background>background\bk_rocks</background>
+    <background>background\prt_spikes</background>
+    <background>background\prt_supercave</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -164,6 +166,7 @@
     <room>rooms\title</room>
     <room>rooms\cavern</room>
     <room>rooms\mountain_trail</room>
+    <room>rooms\forest_path</room>
     <room>rooms\mountain2</room>
     <room>rooms\mountain3</room>
     <room>rooms\mountain4</room>
