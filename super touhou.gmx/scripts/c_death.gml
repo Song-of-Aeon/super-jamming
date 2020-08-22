@@ -68,13 +68,7 @@ if place_meeting(xx, yy + vspd, o_collide) {
 
 
 
-if(!aerial){
-    image_speed = abs(hspd/13);
-    if hspd == 0 {
-      image_index = 0;
-    }
-    
-}
+
 
 //the actual going
 

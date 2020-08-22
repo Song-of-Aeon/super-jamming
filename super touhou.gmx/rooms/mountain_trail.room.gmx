@@ -74,6 +74,7 @@
     <instance objName="o_solid" x="640" y="320" name="inst_DC4433E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_nextmap" x="672" y="160" name="inst_F7BFE01C" locked="0" code="global.goingx = 48;&#xA;global.goingy = 224;&#xA;" scaleX="1.25" scaleY="-11.25" colour="4294967295" rotation="0"/>
     <instance objName="o_solid" x="-16" y="144" name="inst_86410906" locked="0" code="" scaleX="0.5" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="o_music" x="32" y="32" name="inst_9B4C1386" locked="0" code="track = m_mountain;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="prt_cave" x="-16" y="240" w="32" h="32" xo="64" yo="96" id="10000179" name="inst_9A3B0104" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

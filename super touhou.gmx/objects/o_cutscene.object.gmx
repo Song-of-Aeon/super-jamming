@@ -82,6 +82,18 @@ game_save("profile.dat");
     case 1:
         c_cutscenes2();
         break;
+    case 2:
+        c_cutscenes3();
+        break;
+    case 3:
+        c_cutscenesmusic();
+        break;
+    case 4:
+        c_cutscenes4();
+        break;
+    case 5:
+        c_cutscenes1();
+        break;
 }
 </string>
           </argument>
