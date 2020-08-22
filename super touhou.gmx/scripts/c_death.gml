@@ -37,9 +37,7 @@ if place_meeting(xx + hspd, yy, o_slope) {
 
 
 
-if aerial = true {
-    prite_index = air;
-}
+
 
 //ud collision
 if !place_meeting(xx, yy + 1, o_collide) {
@@ -51,7 +49,6 @@ if !place_meeting(xx, yy + 1, o_collide) {
 } else {
     leniance = 5;
     acc = .3;
-    sprite_index = ground;
     hspd = lerp(hspd, 0, frict);
     aerial = false; 
     yy = floor(yy);
@@ -95,7 +92,13 @@ y = floor(yy);
 if(keyboard_check_pressed(vk_f1)){
     c_hitbox_create(id,"test");
 }
-
+sprite_index = death;
+if image_index = 10 {
+    image_speed = 0;
+    instance_create(view_xview, view_yview, o_fao);
+} else {
+    image_speed = .2;
+}
 if place_meeting(x, y, o_damage) && !inv {
     hp--;
     inv = true;

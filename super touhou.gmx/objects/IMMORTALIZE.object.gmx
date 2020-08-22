@@ -143,6 +143,11 @@ if lv = 3 {
 if inv = true {
     sprite_index = damaged;
 }
+if hp = 0 {
+    state = c_death;
+    sprite_index = death;
+    hp = -1;
+}
 </string>
           </argument>
         </arguments>

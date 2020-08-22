@@ -45,9 +45,6 @@ if vspd = 0 {
     }
 }
 
-if aerial = true {
-    sprite_index = air;
-}
 
 //ud collision
 if !place_meeting(xx, yy + 1, o_collide) {
@@ -63,7 +60,6 @@ if !place_meeting(xx, yy + 1, o_collide) {
 } else {
     leniance = 5;
     acc = .3;
-    sprite_index = ground;
     if lv = 1 
         hspd = lerp(hspd, 0, frict/3);
     aerial = false; 
