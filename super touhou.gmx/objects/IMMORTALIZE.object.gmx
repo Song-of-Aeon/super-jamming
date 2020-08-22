@@ -6,7 +6,7 @@
   <depth>-2</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>s_neutral</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -55,6 +55,7 @@ ground = s_neutral;
 neutral = s_neutral;
 attacking = s_neutral;
 thebounce = false;
+dashed = false;
 
 
 lv = 0; //Level of Vitality, ya see
@@ -117,7 +118,7 @@ size*=1.2;
 
 maxhspd = 1.65+lv/.75;
 maxvspd = 6;
-jspd = -4-lv/2;
+jspd = -4.3-lv/2;
 
 if lv = 3 {
     air = s_neutral2;

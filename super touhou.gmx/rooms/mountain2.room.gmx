@@ -58,7 +58,6 @@
     <instance objName="o_solid" x="128" y="256" name="inst_3D88675B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_solid" x="160" y="256" name="inst_2872BCD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_solid" x="192" y="256" name="inst_57C0432E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_chasers" x="-672" y="0" name="inst_97F18741" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_solid" x="224" y="256" name="inst_CFD3A1A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_solid" x="256" y="288" name="inst_88F1923F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_solid" x="288" y="288" name="inst_29310820" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -115,6 +114,7 @@
     <instance objName="o_nextmap" x="1024" y="208" name="inst_BE419E53" locked="0" code="" scaleX="1.25" scaleY="-11.25" colour="4294967295" rotation="0"/>
     <instance objName="o_enemy_spirit" x="832" y="400" name="inst_2925B3BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_enemy_spirit" x="416" y="400" name="inst_2D903FEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_solid" x="-32" y="256" name="inst_90D968A6" locked="0" code="" scaleX="1.5" scaleY="17.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="prt_spikes" x="336" y="464" w="32" h="32" xo="0" yo="64" id="10000897" name="inst_A0864647" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

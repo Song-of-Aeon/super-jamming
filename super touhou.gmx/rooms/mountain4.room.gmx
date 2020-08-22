@@ -88,6 +88,7 @@
     <instance objName="o_solid" x="704" y="512" name="inst_71482D80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_solid" x="736" y="512" name="inst_01ED8F28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_solid" x="992" y="512" name="inst_14C864FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_solid" x="-32" y="96" name="inst_E59412A7" locked="0" code="" scaleX="0.5" scaleY="6.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

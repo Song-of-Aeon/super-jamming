@@ -62,6 +62,7 @@
     <instance objName="o_fairy" x="1696" y="240" name="inst_D4C2EFA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_fairy" x="1632" y="192" name="inst_03C860DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_enemy_spirit" x="1440" y="304" name="inst_68CEB6FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_solid" x="-32" y="144" name="inst_EEF93352" locked="0" code="" scaleX="1" scaleY="10" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

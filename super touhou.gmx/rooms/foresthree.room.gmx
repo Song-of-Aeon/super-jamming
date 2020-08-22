@@ -153,6 +153,13 @@
     <instance objName="o_hv" x="352" y="-16" name="inst_82F76E89" locked="0" code="" scaleX="0.5" scaleY="12.5" colour="4294967295" rotation="0"/>
     <instance objName="o_solid" x="192" y="96" name="inst_A57FA666" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_solid" x="224" y="96" name="inst_E70372C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_spikes" x="512" y="480" name="inst_825F74BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_spikes" x="544" y="480" name="inst_5861BB89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_spikes" x="576" y="480" name="inst_CA366D79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_spikes" x="608" y="480" name="inst_94FFC6EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_spikes" x="640" y="480" name="inst_1DC46CA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_spikes" x="672" y="448" name="inst_3973AD2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_spikes" x="704" y="416" name="inst_C189B04B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

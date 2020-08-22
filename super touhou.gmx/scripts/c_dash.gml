@@ -60,11 +60,15 @@ if !place_meeting(xx, yy + 1, o_collide) {
 } else {
     leniance = 5;
     acc = .3;
-    if lv = 1 
+    if lv = 1 {
         hspd = lerp(hspd, 0, frict/3);
+    } else {
+        vspd = 0;
+    }
     aerial = false; 
     yy = floor(yy);
     vspd = 0;
+    dashed = false;
 }
 
 if place_meeting(xx, yy + vspd, o_collide) {
@@ -129,7 +133,7 @@ if endtimer <= 0 {
         if lv >= 2 {
             instance_create(x+(dir-1)*64, y-8, o_afterimage);
         }
-    } else if dashend = c_dash {
+    } else if dashend = c_dash && !dashed {
         endtimer = 15;
         state = c_dash;
         vspd = vspd/2;

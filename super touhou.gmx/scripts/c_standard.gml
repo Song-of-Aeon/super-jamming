@@ -73,6 +73,7 @@ if !place_meeting(xx, yy + 1, o_collide) {
     aerial = false; 
     yy = floor(yy);
     vspd = 0;
+    dashed = false;
 }
 yy = floor(yy)
 
@@ -177,10 +178,11 @@ if attack && lv >= 1 && ((!aerial && lv < 3) || lv = 3) {
     }
 }
 
-if dash && lv >= 1 {
+if dash && lv >= 1 && !dashed {
     endtimer = 15;
     state = c_dash;
     vspd = vspd/2;
+    dashed = true;
     c_hitbox_create(id,"s_dash",1);
     hspd = -(dir-1)*8;
     if lv >= 2 {
