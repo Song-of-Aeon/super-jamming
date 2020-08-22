@@ -98,10 +98,18 @@ if(keyboard_check_pressed(vk_f1)){
 
 if place_meeting(x, y, o_damage) && !inv {
     hp--;
-    inv = true;
-    alarm[0] = 60;
-    image_alpha = .5;
     //audio_play_sound(something);
+    if hp = 0 {
+        state = c_death;
+        sprite_index = death;
+        hp = -1;
+    } else {
+
+        inv = true;
+        alarm[0] = 60;
+        image_alpha = .5;
+        vspd = -2;
+    }
 }
 
 //image_speed = 1;

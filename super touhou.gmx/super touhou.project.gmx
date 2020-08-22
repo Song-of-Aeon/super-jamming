@@ -94,6 +94,8 @@
     <sprite>sprites\s_ground</sprite>
     <sprite>sprites\s_ground2</sprite>
     <sprite>sprites\s_hit</sprite>
+    <sprite>sprites\s_air2</sprite>
+    <sprite>sprites\s_crouch2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -182,6 +184,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\cavern</room>
+    <room>rooms\sanzu</room>
     <room>rooms\mountain_trail</room>
     <room>rooms\mountain2</room>
     <room>rooms\mountain3</room>
@@ -192,7 +195,6 @@
     <room>rooms\fivest</room>
     <room>rooms\sixest</room>
     <room>rooms\reconsideration</room>
-    <room>rooms\sanzu</room>
     <room>rooms\the_void</room>
     <room>rooms\hitbox_maker</room>
     <room>rooms\title</room>
