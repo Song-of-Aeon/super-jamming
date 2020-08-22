@@ -92,7 +92,7 @@ if dash && lv >= 2 && endtimer <= 5 {
 
 
 
-sprite_index = attacking
+sprite_index = attacking;
 if image_index < 2 {
     image_speed = .3;
 } else {

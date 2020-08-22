@@ -123,12 +123,12 @@ maxvspd = 6;
 jspd = -4.3-lv/2;
 
 if lv = 3 {
-    air = s_neutral2;
+    air = s_air2;
     ground = s_ground2;
     neutral = s_neutral2;
     attacking = s_attack2;
     damaged = s_damaged2;
-    crouch = s_neutral2;
+    crouch = s_crouch2;
     death = s_death2;
 } else {
     air = s_air;
@@ -146,11 +146,7 @@ if lv = 3 {
 if inv = true {
     sprite_index = damaged;
 }
-if hp = 0 {
-    state = c_death;
-    sprite_index = death;
-    hp = -1;
-}
+
 </string>
           </argument>
         </arguments>
