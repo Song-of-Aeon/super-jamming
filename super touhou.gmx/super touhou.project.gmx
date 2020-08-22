@@ -178,6 +178,7 @@
     <object>objects\o_fairy</object>
     <object>objects\o_boss</object>
     <object>objects\o_music</object>
+    <object>objects\o_die</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\cavern</room>
@@ -196,6 +197,7 @@
     <room>rooms\hitbox_maker</room>
     <room>rooms\title</room>
     <room>rooms\template</room>
+    <room>rooms\die</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
