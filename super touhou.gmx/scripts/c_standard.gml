@@ -78,7 +78,6 @@ if !place_meeting(xx, yy + 1, o_collide) {
     vspd = 0;
     dashed = false;
 }
-yy = floor(yy)
 
 if place_meeting(xx, yy + floor(vspd), o_collide) {
     while !place_meeting(xx, yy + sign(floor(vspd)), o_collide) {
@@ -88,6 +87,9 @@ if place_meeting(xx, yy + floor(vspd), o_collide) {
     
 }
 
+
+   // yy = ceil(yy)
+  
 
 //directions and sprites
 
@@ -166,10 +168,8 @@ if place_meeting(x, y, o_damage) && !inv {
     xx += hspd;
     yy += vspd;
 
-//xx = floor(xx)
+yy = ceil(yy)
 
-x = floor(xx);
-y = floor(yy);
 
 if(keyboard_check_pressed(vk_f1)){
     c_hitbox_create(id,"test");
@@ -200,5 +200,7 @@ if dash && lv >= 1 && !dashed {
         instance_create(x+(dir-1)*64, y-8, o_afterimage);
     }
 }
+y = yy;
+x = xx;
 
 //image_speed = 1;
