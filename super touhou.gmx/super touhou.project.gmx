@@ -149,6 +149,7 @@
     <object>objects\o_spikes</object>
     <object>objects\o_cutscene</object>
     <object>objects\o_enemy_parent</object>
+    <object>objects\o_enemy_spirit</object>
     <object>objects\o_chasers</object>
     <object>objects\o_afterimage</object>
     <object>objects\o_title</object>
