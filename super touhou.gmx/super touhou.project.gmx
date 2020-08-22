@@ -82,13 +82,15 @@
     <sprite>sprites\s_damaged2</sprite>
     <sprite>sprites\s_air</sprite>
     <sprite>sprites\s_crouch</sprite>
+    <sprite>sprites\s_death</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
     <background>background\background2</background>
     <background>background\background0</background>
     <background>background\bk_title</background>
-    <background>background\bk_cave</background>
+    <background>background\prt_cave</background>
+    <background>background\bk_rocks</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -114,6 +116,7 @@
       <script>scripts\txt_drink1.gml</script>
       <script>scripts\txt_test.gml</script>
       <script>scripts\txt_.gml</script>
+      <script>scripts\txt_drink2.gml</script>
       <script>scripts\txt_start.gml</script>
       <script>scripts\c_cutscenes1.gml</script>
       <script>scripts\c_cutscenes2.gml</script>
@@ -156,8 +159,9 @@
     <room>rooms\title</room>
     <room>rooms\cavern</room>
     <room>rooms\mountain_trail</room>
-    <room>rooms\mountain3</room>
     <room>rooms\mountain2</room>
+    <room>rooms\mountain3</room>
+    <room>rooms\mountain4</room>
     <room>rooms\the_void</room>
     <room>rooms\hitbox_maker</room>
   </rooms>
