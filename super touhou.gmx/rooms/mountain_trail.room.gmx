@@ -75,6 +75,9 @@
     <instance objName="o_nextmap" x="672" y="160" name="inst_F7BFE01C" locked="0" code="global.goingx = 48;&#xA;global.goingy = 224;&#xA;" scaleX="1.25" scaleY="-11.25" colour="4294967295" rotation="0"/>
     <instance objName="o_solid" x="-16" y="144" name="inst_86410906" locked="0" code="" scaleX="0.5" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="o_music" x="32" y="32" name="inst_9B4C1386" locked="0" code="track = m_mountain;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_rock1" x="128" y="192" name="inst_DCD31AE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_rock2" x="432" y="224" name="inst_1E5EECEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_clouds" x="320" y="64" name="inst_F68E0D2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="prt_cave" x="-16" y="240" w="32" h="32" xo="64" yo="96" id="10000179" name="inst_9A3B0104" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -84,7 +87,6 @@
     <tile bgName="prt_cave" x="112" y="240" w="32" h="32" xo="64" yo="96" id="10000183" name="inst_00D54BA6" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_cave" x="176" y="240" w="32" h="32" xo="64" yo="96" id="10000184" name="inst_1AA658E5" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_cave" x="144" y="240" w="32" h="32" xo="64" yo="96" id="10000185" name="inst_7EB04D15" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prt_cave" x="208" y="272" w="32" h="32" xo="64" yo="96" id="10000186" name="inst_589CD6D7" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_cave" x="240" y="272" w="32" h="32" xo="64" yo="96" id="10000187" name="inst_16D57040" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_cave" x="272" y="272" w="32" h="32" xo="64" yo="96" id="10000188" name="inst_E7AF8F77" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_cave" x="304" y="272" w="32" h="32" xo="64" yo="96" id="10000189" name="inst_DC604F4E" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -142,10 +144,11 @@
     <tile bgName="prt_cave" x="560" y="336" w="32" h="32" xo="64" yo="128" id="10000241" name="inst_C48CA9AD" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_cave" x="592" y="336" w="32" h="32" xo="64" yo="128" id="10000242" name="inst_98AA388B" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_cave" x="624" y="336" w="32" h="32" xo="64" yo="128" id="10000243" name="inst_915FC908" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prt_cave" x="208" y="240" w="32" h="32" xo="96" yo="96" id="10000244" name="inst_9655EC97" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="prt_cave" x="208" y="272" w="32" h="32" xo="96" yo="128" id="10000245" name="inst_962071FA" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_cave" x="496" y="304" w="32" h="32" xo="96" yo="128" id="10000246" name="inst_1F6A89DE" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="prt_cave" x="496" y="272" w="32" h="32" xo="96" yo="96" id="10000247" name="inst_4869CB3B" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="prt_tiles" x="576" y="16" w="32" h="32" xo="352" yo="320" id="10000915" name="inst_9B26B53D" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="prt_tiles" x="208" y="240" w="32" h="32" xo="320" yo="512" id="10000920" name="inst_F63917F2" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="prt_tiles" x="208" y="272" w="32" h="32" xo="192" yo="480" id="10000921" name="inst_D4EF2A8A" depth="-3" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

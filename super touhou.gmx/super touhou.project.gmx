@@ -100,12 +100,17 @@
     <sprite>sprites\s_tree2</sprite>
     <sprite>sprites\s_three</sprite>
     <sprite>sprites\s_tree4</sprite>
+    <sprite>sprites\s_rocks</sprite>
+    <sprite>sprites\s_rocks2</sprite>
+    <sprite>sprites\s_sans_facepic_left</sprite>
+    <sprite>sprites\s_water</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
     <background>background\background2</background>
     <background>background\background0</background>
     <background>background\bk_title</background>
+    <background>background\background9</background>
     <background>background\prt_cave</background>
     <background>background\bk_rocks</background>
     <background>background\prt_spikes</background>
@@ -189,8 +194,12 @@
     <object>objects\o_tree2</object>
     <object>objects\o_three</object>
     <object>objects\o_tree4</object>
+    <object>objects\o_rock1</object>
+    <object>objects\o_rock2</object>
+    <object>objects\o_clouds</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\title</room>
     <room>rooms\cavern</room>
     <room>rooms\mountain_trail</room>
     <room>rooms\mountain2</room>
@@ -205,7 +214,6 @@
     <room>rooms\sanzu</room>
     <room>rooms\the_void</room>
     <room>rooms\hitbox_maker</room>
-    <room>rooms\title</room>
     <room>rooms\template</room>
     <room>rooms\sanzu</room>
     <room>rooms\die</room>
