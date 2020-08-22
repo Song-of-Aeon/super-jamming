@@ -151,6 +151,7 @@ if hp = 0 {
     sprite_index = death;
     hp = -1;
 }
+
 </string>
           </argument>
         </arguments>
@@ -249,6 +250,10 @@ if keyboard_check_pressed(ord("L")) {
             <kind>1</kind>
             <string>draw_text(30, 30, "hp: " + string(hp));
 draw_text(30, 50, "lv: " + string(lv));
+draw_text(30, 70, y);
+draw_text(30,100, vspd);
+draw_text(30,130,aerial);
+
 </string>
           </argument>
         </arguments>
