@@ -64,6 +64,7 @@
     <sound>sound\m_mountain</sound>
     <sound>sound\m_forest</sound>
     <sound>sound\m_boss</sound>
+    <sound>sound\sound4</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_null</sprite>
@@ -104,6 +105,7 @@
     <sprite>sprites\s_rocks2</sprite>
     <sprite>sprites\s_sans_facepic_left</sprite>
     <sprite>sprites\s_water</sprite>
+    <sprite>sprites\sprite38</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -116,6 +118,8 @@
     <background>background\prt_spikes</background>
     <background>background\prt_supercave</background>
     <background>background\prt_tiles</background>
+    <background>background\bk_everything</background>
+    <background>background\background11</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
