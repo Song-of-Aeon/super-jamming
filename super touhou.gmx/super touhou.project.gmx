@@ -169,13 +169,14 @@
     <room>rooms\cavern</room>
     <room>rooms\foresthree</room>
     <room>rooms\mountain_trail</room>
-    <room>rooms\template</room>
     <room>rooms\forest_path</room>
     <room>rooms\mountain2</room>
     <room>rooms\mountain3</room>
     <room>rooms\mountain4</room>
+    <room>rooms\dashing</room>
     <room>rooms\the_void</room>
     <room>rooms\hitbox_maker</room>
+    <room>rooms\template</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
