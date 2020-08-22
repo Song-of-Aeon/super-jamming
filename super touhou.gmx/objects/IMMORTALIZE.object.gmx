@@ -126,13 +126,19 @@ if lv = 3 {
     attacking = s_attack2;
     damaged = s_damaged2;
     crouch = s_neutral2;
+    death = s_death2;
 } else {
     air = s_air;
     ground = s_neutral;
     neutral = s_neutral;
-    attacking = s_neutral;
+    if lv = 2 {
+        attacking = s_attack;
+    } else {
+        attacking = s_attack0;
+    }
     damaged = s_neutral;
     crouch = s_crouch;
+    death = s_death;
 }
 if inv = true {
     sprite_index = damaged;

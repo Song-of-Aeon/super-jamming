@@ -83,6 +83,9 @@
     <sprite>sprites\s_air</sprite>
     <sprite>sprites\s_crouch</sprite>
     <sprite>sprites\s_death</sprite>
+    <sprite>sprites\s_death2</sprite>
+    <sprite>sprites\s_attack</sprite>
+    <sprite>sprites\s_attack0</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -100,6 +103,7 @@
     <script>scripts\c_dash.gml</script>
     <script>scripts\c_attack.gml</script>
     <script>scripts\c_lock.gml</script>
+    <script>scripts\c_death.gml</script>
     <script>scripts\c_drinking.gml</script>
     <script>scripts\console_log.gml</script>
     <script>scripts\draw_circle_width.gml</script>
