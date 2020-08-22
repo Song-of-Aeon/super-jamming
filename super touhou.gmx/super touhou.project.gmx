@@ -184,7 +184,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\cavern</room>
-    <room>rooms\sanzu</room>
     <room>rooms\mountain_trail</room>
     <room>rooms\mountain2</room>
     <room>rooms\mountain3</room>
@@ -199,6 +198,7 @@
     <room>rooms\hitbox_maker</room>
     <room>rooms\title</room>
     <room>rooms\template</room>
+    <room>rooms\sanzu</room>
     <room>rooms\die</room>
   </rooms>
   <help>

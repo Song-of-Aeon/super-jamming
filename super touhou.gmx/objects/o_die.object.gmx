@@ -29,6 +29,7 @@
 alarm[0] = 100;
 x = 320;
 y = 240;
+room = die;
 </string>
           </argument>
         </arguments>
@@ -51,7 +52,7 @@ y = 240;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room = die;
+            <string>
 level = IMMORTALIZE.lv;
 instance_destroy(IMMORTALIZE);
 </string>
