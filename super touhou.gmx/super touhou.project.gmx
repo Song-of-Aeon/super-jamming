@@ -59,7 +59,12 @@
     </datafiles>
   </datafiles>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\m_title</sound>
+    <sound>sound\m_mountain</sound>
+    <sound>sound\m_forest</sound>
+    <sound>sound\m_boss</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_null</sprite>
     <sprite>sprites\s_mokou</sprite>
@@ -99,6 +104,7 @@
     <background>background\bk_rocks</background>
     <background>background\prt_spikes</background>
     <background>background\prt_supercave</background>
+    <background>background\prt_tiles</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -132,6 +138,7 @@
       <script>scripts\c_cutscenes1.gml</script>
       <script>scripts\c_cutscenes2.gml</script>
       <script>scripts\c_cutscenes3.gml</script>
+      <script>scripts\c_cutscenesmusic.gml</script>
       <script>scripts\c_cutscenes4.gml</script>
     </scripts>
   </scripts>
@@ -170,6 +177,7 @@
     <object>objects\o_camerahook</object>
     <object>objects\o_fairy</object>
     <object>objects\o_boss</object>
+    <object>objects\o_music</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\cavern</room>
@@ -181,13 +189,13 @@
     <room>rooms\foresthree</room>
     <room>rooms\fourest</room>
     <room>rooms\fivest</room>
+    <room>rooms\sixest</room>
+    <room>rooms\reconsideration</room>
+    <room>rooms\sanzu</room>
     <room>rooms\the_void</room>
     <room>rooms\hitbox_maker</room>
     <room>rooms\title</room>
     <room>rooms\template</room>
-    <room>rooms\sanzu</room>
-    <room>rooms\reconsideration</room>
-    <room>rooms\sixest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

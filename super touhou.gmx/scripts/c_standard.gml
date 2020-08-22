@@ -65,6 +65,9 @@ if !place_meeting(xx, yy + 1, o_collide) {
     hspd = lerp(hspd, 0, frict/2);
     aerial = true;
     grav = .2;
+    /*if vspd < .3 && vspd > -.3 {
+        sprite_index = neutral;
+    }*/
 } else {
     leniance = 5;
     acc = .3;
