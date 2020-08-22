@@ -52,6 +52,7 @@ countwo = 0;
             <kind>1</kind>
             <string>global.cutscenecount++;
 console_log(global.cutscenecount);
+game_save("profile.dat");
 </string>
           </argument>
         </arguments>

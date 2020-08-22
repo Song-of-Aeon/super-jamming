@@ -119,13 +119,14 @@
     </scripts>
     <scripts name="dialogue and cutscenes">
       <script>scripts\c_txtcommon.gml</script>
-      <script>scripts\txt_drink1.gml</script>
       <script>scripts\txt_test.gml</script>
       <script>scripts\txt_.gml</script>
-      <script>scripts\txt_drink2.gml</script>
       <script>scripts\txt_start.gml</script>
+      <script>scripts\txt_drink1.gml</script>
+      <script>scripts\txt_drink2.gml</script>
       <script>scripts\c_cutscenes1.gml</script>
       <script>scripts\c_cutscenes2.gml</script>
+      <script>scripts\c_cutscenes3.gml</script>
     </scripts>
   </scripts>
   <shaders name="shaders">
@@ -161,11 +162,14 @@
     <object>objects\o_title</object>
     <object>objects\o_hv</object>
     <object>objects\o_camerahook</object>
+    <object>objects\o_fairy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\title</room>
     <room>rooms\cavern</room>
+    <room>rooms\foresthree</room>
     <room>rooms\mountain_trail</room>
+    <room>rooms\template</room>
     <room>rooms\forest_path</room>
     <room>rooms\mountain2</room>
     <room>rooms\mountain3</room>

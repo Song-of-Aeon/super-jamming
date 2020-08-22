@@ -89,14 +89,15 @@ if(progress &gt; activemax){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if place_meeting(x, y, o_damage) &amp;&amp; place_meeting(x, y, o_enemy) != o_spikes {
+            <string>if place_meeting(x, y, o_damage) &amp;&amp; place_meeting(x, y, o_damage) != o_spikes {
     with instance_nearest(x, y, o_damage) {
         vspd = -(90/distance_to_point(IMMORTALIZE.x, IMMORTALIZE.y));
         hspd = 90/distance_to_point(IMMORTALIZE.x, IMMORTALIZE.y) * -(IMMORTALIZE.dir-1);
-        hp -= other.damage;
+        hp--;
     }
-    active = false;
+    instance_destroy();
 }
+
 </string>
           </argument>
         </arguments>

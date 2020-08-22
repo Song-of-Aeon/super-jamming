@@ -140,7 +140,15 @@ if leniance > 0 {
     }
 }
 
-
+if place_meeting(x, y, o_damage) && !inv {
+    hp--;
+    inv = true;
+    alarm[0] = 60;
+    image_alpha = .5;
+    vspd = -2;
+    //audio_play_sound(something);
+} else if inv
+        image_speed = .3;
 
 
     xx += hspd;
@@ -155,14 +163,7 @@ if(keyboard_check_pressed(vk_f1)){
     c_hitbox_create(id,"test");
 }
 
-if place_meeting(x, y, o_damage) && !inv {
-    hp--;
-    inv = true;
-    alarm[0] = 60;
-    image_alpha = .5;
-    vspd = -2;
-    //audio_play_sound(something);
-}
+
 
 if attack && lv >= 1 && ((!aerial && lv < 3) || lv = 3) {
     endtimer = 20;

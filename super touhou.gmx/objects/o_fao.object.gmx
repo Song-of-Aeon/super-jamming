@@ -3,7 +3,7 @@
   <spriteName>s_whosafraidofthebigblack</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-5</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_alpha = 0;
+count = 0;
 </string>
           </argument>
         </arguments>
@@ -48,19 +49,25 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha += .1;
-if image_alpha &gt;= 1 {
-    if instance_exists(0) {
-        IMMORTALIZE.x = 50;
-        IMMORTALIZE.y = 50;
-        IMMORTALIZE.xx = 50;
-        IMMORTALIZE.yy = 50;
-    }
-    room_goto_next();
-    instance_create(0, 0, o_fai);
-    instance_destroy();
+            <string>count++;
+if image_alpha &gt;= 1 { //fuck you
+        if instance_exists(0) {
+            IMMORTALIZE.x = 50;
+            IMMORTALIZE.y = 50;
+            IMMORTALIZE.xx = 50;
+            IMMORTALIZE.yy = 50;
+            if IMMORTALIZE.state = c_death {
+                if count &gt;= 120 {
+                    game_load("profile.dat");
+                }
+                exit;
+            }
+        }
+        room_goto_next();
+        instance_create(0, 0, o_fai);
+        instance_destroy();
 }
-
+image_alpha = count/10;
 </string>
           </argument>
         </arguments>

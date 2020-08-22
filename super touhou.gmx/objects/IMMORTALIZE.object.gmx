@@ -115,7 +115,7 @@ if(keyboard_check(vk_f3)){
 size*=1.2;
 }
 
-maxhspd = 1.5+lv/.75;
+maxhspd = 1.65+lv/.75;
 maxvspd = 6;
 jspd = -4-lv/2;
 
