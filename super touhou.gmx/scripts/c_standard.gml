@@ -11,7 +11,17 @@ if(abs(hspd) < 0.2 and !aerial){ //. stopping it from bullshitting like funny
 }
 
 
-
+var collide = collision_line(bbox_left,bbox_bottom+1,bbox_right,bbox_bottom+1,o_collide,false,true);
+if(collide != noone){
+    grounded = true;
+}
+else{
+    grounded = false;
+}
+//.snap to collider.
+if(grounded){
+    yy = collide.bbox_top-(sprite_height-sprite_get_yoffset(sprite_index));
+}
 //lr collision
 
 if place_meeting(xx + hspd, yy, o_solid) {
@@ -168,7 +178,7 @@ if place_meeting(x, y, o_damage) && !inv {
     xx += hspd;
     yy += vspd;
 
-yy = ceil(yy)
+//yy = ceil(yy)
 
 
 if(keyboard_check_pressed(vk_f1)){

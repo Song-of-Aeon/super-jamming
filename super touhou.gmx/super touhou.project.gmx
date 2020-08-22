@@ -105,7 +105,7 @@
     <sprite>sprites\s_rocks2</sprite>
     <sprite>sprites\s_sans_facepic_left</sprite>
     <sprite>sprites\s_water</sprite>
-    <sprite>sprites\sprite38</sprite>
+    <sprite>sprites\s_mountain</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
