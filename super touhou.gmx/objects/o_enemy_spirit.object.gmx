@@ -52,7 +52,7 @@ vspd = 0;
           <argument>
             <kind>1</kind>
             <string>//.initial grounded code
-var collide = collision_line(x,y,bbox_right,y,o_collide,false,true);
+var collide = collision_line(bbox_left,bbox_bottom,bbox_right,bbox_bottom,o_collide,false,true);
 if(collide != noone){
     grounded = true;
 }
