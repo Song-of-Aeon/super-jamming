@@ -160,6 +160,9 @@
     <instance objName="o_spikes" x="640" y="480" name="inst_1DC46CA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_spikes" x="672" y="448" name="inst_3973AD2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_spikes" x="704" y="416" name="inst_C189B04B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_tree4" x="592" y="264" name="inst_C6D18025" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_tree4" x="118" y="296" name="inst_AC9CD9BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_tree2" x="351" y="121" name="inst_C8EEAF2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
