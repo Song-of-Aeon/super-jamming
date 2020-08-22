@@ -20,6 +20,7 @@ switch goingdoing {
         instance_destroy();
         IMMORTALIZE.state = c_standard; //c_drinking
         IMMORTALIZE.lv++;
+        hp = 4;
         count = 0;
         break;
 }

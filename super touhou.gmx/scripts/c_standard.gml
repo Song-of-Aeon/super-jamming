@@ -116,7 +116,7 @@ if (left) {
 if (((!left && !right) || hspd = 0 ) && !aerial) && !keyboard_check(vk_down) {
     sprite_index = neutral;
 } else if !aerial {
-    image_speed = abs(hspd/13);
+    image_speed = abs(hspd/16);
     sprite_index = ground;
     if hspd == 0 {
       image_index = 0;

@@ -86,6 +86,9 @@
     <sprite>sprites\s_death2</sprite>
     <sprite>sprites\s_attack</sprite>
     <sprite>sprites\s_attack0</sprite>
+    <sprite>sprites\s_ground</sprite>
+    <sprite>sprites\s_ground2</sprite>
+    <sprite>sprites\s_hit</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -121,12 +124,15 @@
       <script>scripts\c_txtcommon.gml</script>
       <script>scripts\txt_test.gml</script>
       <script>scripts\txt_.gml</script>
+      <script>scripts\txt_drink3.gml</script>
+      <script>scripts\txt_edge.gml</script>
       <script>scripts\txt_start.gml</script>
       <script>scripts\txt_drink1.gml</script>
       <script>scripts\txt_drink2.gml</script>
       <script>scripts\c_cutscenes1.gml</script>
       <script>scripts\c_cutscenes2.gml</script>
       <script>scripts\c_cutscenes3.gml</script>
+      <script>scripts\c_cutscenes4.gml</script>
     </scripts>
   </scripts>
   <shaders name="shaders">
@@ -163,20 +169,25 @@
     <object>objects\o_hv</object>
     <object>objects\o_camerahook</object>
     <object>objects\o_fairy</object>
+    <object>objects\o_boss</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\cavern</room>
-    <room>rooms\foresthree</room>
     <room>rooms\mountain_trail</room>
-    <room>rooms\forest_path</room>
     <room>rooms\mountain2</room>
     <room>rooms\mountain3</room>
     <room>rooms\mountain4</room>
+    <room>rooms\forest_path</room>
+    <room>rooms\foresthree</room>
     <room>rooms\fourest</room>
+    <room>rooms\fivest</room>
     <room>rooms\the_void</room>
     <room>rooms\hitbox_maker</room>
     <room>rooms\title</room>
     <room>rooms\template</room>
+    <room>rooms\sanzu</room>
+    <room>rooms\reconsideration</room>
+    <room>rooms\sixest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

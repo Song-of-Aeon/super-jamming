@@ -52,10 +52,10 @@ count = 0;
             <string>count++;
 if image_alpha &gt;= 1 { //fuck you
         if instance_exists(0) {
-            IMMORTALIZE.x = 50;
-            IMMORTALIZE.y = 50;
-            IMMORTALIZE.xx = 50;
-            IMMORTALIZE.yy = 50;
+            IMMORTALIZE.x = global.goingx;
+            IMMORTALIZE.y = global.goingy;
+            IMMORTALIZE.xx = global.goingx;
+            IMMORTALIZE.yy = global.goingy;
             if IMMORTALIZE.state = c_death {
                 if count &gt;= 120 {
                     game_load("profile.dat");

@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="o_nextmap" x="1024" y="448" name="inst_F7BFE01C" locked="0" code="" scaleX="1.25" scaleY="-11.25" colour="4294967295" rotation="0"/>
+    <instance objName="o_nextmap" x="1024" y="448" name="inst_F7BFE01C" locked="0" code="global.goingx = 48;&#xA;global.goingy = 256;&#xA;" scaleX="1.25" scaleY="-11.25" colour="4294967295" rotation="0"/>
     <instance objName="o_solid" x="64" y="288" name="inst_B655F82B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_solid" x="0" y="288" name="inst_A065BF0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_solid" x="32" y="288" name="inst_431365B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
