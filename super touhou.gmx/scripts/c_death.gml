@@ -1,7 +1,7 @@
 ///c_standard
 
 //lr movement
-
+/*
 if(abs(hspd) < 0.2 and !aerial){ //. stopping it from bullshitting like funny
     hspd = 0;
 }
@@ -92,4 +92,5 @@ if image_index >= 10 {
     instance_create(view_xview, view_yview, o_fao);
 } else {
     image_speed = .2;
-}
+}*/
+instance_create(0,0,o_die);
