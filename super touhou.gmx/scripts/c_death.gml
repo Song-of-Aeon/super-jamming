@@ -93,4 +93,18 @@ if image_index >= 10 {
 } else {
     image_speed = .2;
 }*/
-instance_create(0,0,o_die);
+if(lv < 3){
+    instance_create(0,0,o_die);
+}
+else{
+    sprite_index = s_death2
+    //image_speed = 0.25;
+    if(round(image_index) == sprite_get_number(sprite_index)-1 and sign(image_speed) != -1){
+        hp = 3;
+        image_speed = -0.25;
+        //state = c_standard;
+    }
+    if(sign(image_speed) == -1 and image_index < 1.5){
+        state = c_standard;
+    }
+}
