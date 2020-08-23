@@ -64,6 +64,30 @@ if pulse {
     sprite_index = s_snaking;
     factor = factor*1.04;
     image_index = floor(factor);
+    if(image_index == 4){
+        var hit = collision_line(x,y,lengthdir_x(500,direction),lengthdir_y(500,direction),IMMORTALIZE,false,false);
+            with(hit)
+            if !inv {
+        hp--;
+        if hp &lt; 2 {
+            audio_play_sound(se_hurtwo, 0, false);
+        } else {
+            audio_play_sound(se_hurt, 0, false);
+        }
+        //audio_play_sound(something);
+        if hp = 0 {
+            state = c_death;
+            sprite_index = death;
+            hp = -1;
+        } else {
+    
+            inv = true;
+            alarm[0] = 60;
+            image_alpha = .5;
+            vspd = -2;
+        }
+        }
+    }
     
     if factor &gt;= 8 {
         pulse = false;
