@@ -37,7 +37,8 @@ switch goingdoing {
         instance_destroy();
         IMMORTALIZE.state = c_standard; //c_drinking
         IMMORTALIZE.lv++;
-        hp = 4;
+        audio_play_sound(se_drinking, 0, false);
+        hp = 3;
         count = 0;
         break;
 }

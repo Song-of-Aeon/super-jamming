@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>2954515</colour>
   <showcolour>-1</showcolour>
-  <code>o_music.track = m_forest;</code>
+  <code>o_music.track = m_forest;
+audio_play_sound(se_bell, 0, false);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

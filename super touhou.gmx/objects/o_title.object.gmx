@@ -55,6 +55,7 @@ if downprs || upprs {
 if jump {
     if !position {
         instance_create(view_xview, view_yview, o_fao);
+        audio_play_sound(se_yes, 0, false);
     } else {
         game_end();
     }

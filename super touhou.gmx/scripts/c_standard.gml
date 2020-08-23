@@ -11,17 +11,7 @@ if(abs(hspd) < 0.2 and !aerial){ //. stopping it from bullshitting like funny
 }
 
 
-var collide = collision_line(bbox_left,bbox_bottom+1,bbox_right,bbox_bottom+1,o_collide,false,true);
-if(collide != noone){
-    grounded = true;
-}
-else{
-    grounded = false;
-}
-//.snap to collider.
-if(grounded){
-    yy = collide.bbox_top-(sprite_height-sprite_get_yoffset(sprite_index));
-}
+
 //lr collision
 
 if place_meeting(xx + hspd, yy, o_solid) {
@@ -133,6 +123,15 @@ if (((!left && !right) || hspd = 0 ) && !aerial) && !keyboard_check(vk_down) {
 } else if !aerial {
     image_speed = abs(hspd/16);
     sprite_index = ground;
+    if room > 5 && image_index = 3 {
+        if !audio_is_playing(se_grass) {
+            audio_play_sound(se_grass, 0, false);
+        }
+    } else {
+        if !audio_is_playing(se_stone) {
+            audio_play_sound(se_stone, 0, false);
+        }
+    }
     if hspd == 0 {
       image_index = 0;
     }
@@ -153,11 +152,17 @@ if leniance > 0 {
             leniance = 0;
         }
         sprite_index = crouch;
+        audio_play_sound(se_jump, 0, false);
     }
 }
 
 if place_meeting(x, y, o_damage) && !inv {
     hp--;
+    if hp < 2 {
+        audio_play_sound(se_hurtwo, 0, false);
+    } else {
+        audio_play_sound(se_hurt, 0, false);
+    }
     //audio_play_sound(something);
     if hp = 0 {
         state = c_death;
@@ -178,7 +183,7 @@ if place_meeting(x, y, o_damage) && !inv {
     xx += hspd;
     yy += vspd;
 
-//yy = ceil(yy)
+yy = ceil(yy)
 
 
 if(keyboard_check_pressed(vk_f1)){
@@ -194,12 +199,14 @@ if attack && lv >= 1 && ((!aerial && lv < 3) || lv = 3) {
     image_index = 0;
     c_hitbox_create(id,"s_attack2",1);
     hspd = hspd/3;
+    audio_play_sound(se_attack, 0, false);
     if lv >= 2 {
         instance_create(x+(dir-1)*64, y-8, o_afterimage);
     }
 }
 
 if dash && lv >= 1 && !dashed {
+    audio_play_sound(se_dash, 0, false);
     endtimer = 15;
     state = c_dash;
     vspd = vspd/2;

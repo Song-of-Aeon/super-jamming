@@ -123,9 +123,11 @@ if endtimer <= 0 {
             vspd = .5 * jspd;
             leniance = 0;
         }
+        audio_play_sound(se_jump, 0, false);
         state = c_standard;
     } else if dashend = c_attack {
         endtimer = 20;
+        audio_play_sound(se_attack, 0, false);
         state = c_attack;
         sprite_index = attacking;
         image_index = 0;
@@ -134,6 +136,7 @@ if endtimer <= 0 {
             instance_create(x+(dir-1)*64, y-8, o_afterimage);
         }
     } else if dashend = c_dash && !dashed {
+        audio_play_sound(se_dash, 0, false);
         endtimer = 15;
         state = c_dash;
         vspd = vspd/2;

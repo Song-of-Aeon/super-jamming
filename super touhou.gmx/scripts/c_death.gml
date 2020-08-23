@@ -94,12 +94,14 @@ if image_index >= 10 {
     image_speed = .2;
 }*/
 if(lv < 3){
+    audio_play_sound(se_dies, 0, false);
     instance_create(0,0,o_die);
 }
 else{
     sprite_index = s_death2
     //image_speed = 0.25;
     if(round(image_index) == sprite_get_number(sprite_index)-1 and sign(image_speed) != -1){
+        audio_play_sound(se_dies, 0, false);
         hp = 3;
         image_speed = -0.25;
         //state = c_standard;

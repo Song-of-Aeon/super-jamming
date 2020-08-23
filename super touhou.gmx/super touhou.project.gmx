@@ -64,7 +64,19 @@
     <sound>sound\m_mountain</sound>
     <sound>sound\m_forest</sound>
     <sound>sound\m_boss</sound>
-    <sound>sound\sound4</sound>
+    <sound>sound\se_jump</sound>
+    <sound>sound\se_dies</sound>
+    <sound>sound\se_hurt</sound>
+    <sound>sound\se_hurtwo</sound>
+    <sound>sound\se_grass</sound>
+    <sound>sound\se_stone</sound>
+    <sound>sound\se_bell</sound>
+    <sound>sound\se_dash</sound>
+    <sound>sound\se_drinking</sound>
+    <sound>sound\se_hit</sound>
+    <sound>sound\se_yes</sound>
+    <sound>sound\se_no</sound>
+    <sound>sound\se_attack</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_null</sprite>
@@ -105,7 +117,7 @@
     <sprite>sprites\s_rocks2</sprite>
     <sprite>sprites\s_sans_facepic_left</sprite>
     <sprite>sprites\s_water</sprite>
-    <sprite>sprites\s_mountain</sprite>
+    <sprite>sprites\sprite38</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -119,6 +131,7 @@
     <background>background\prt_supercave</background>
     <background>background\prt_tiles</background>
     <background>background\bk_everything</background>
+    <background>background\background12</background>
     <background>background\background11</background>
   </backgrounds>
   <paths name="paths"/>
