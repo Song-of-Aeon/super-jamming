@@ -158,11 +158,11 @@
       <script>scripts\c_txtcommon.gml</script>
       <script>scripts\txt_test.gml</script>
       <script>scripts\txt_.gml</script>
-      <script>scripts\txt_drink3.gml</script>
       <script>scripts\txt_edge.gml</script>
       <script>scripts\txt_start.gml</script>
       <script>scripts\txt_drink1.gml</script>
       <script>scripts\txt_drink2.gml</script>
+      <script>scripts\txt_drink3.gml</script>
       <script>scripts\c_cutscenes1.gml</script>
       <script>scripts\c_cutscenes2.gml</script>
       <script>scripts\c_cutscenes3.gml</script>

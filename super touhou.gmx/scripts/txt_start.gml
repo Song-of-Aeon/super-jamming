@@ -2,7 +2,7 @@
 //depending on if the message[] = is prefacing it, you have | <   this  > | much space
 //and five lines to work with
 message[0] = "...They're gone.";
-message[1] = "I can take it and run away,
+message[1] = "I can escape with the elixir,
 just like I intended to.";
 
 choice[0] = "";
