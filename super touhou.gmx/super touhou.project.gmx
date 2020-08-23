@@ -169,6 +169,7 @@
       <script>scripts\c_txtcommon.gml</script>
       <script>scripts\txt_test.gml</script>
       <script>scripts\txt_.gml</script>
+      <script>scripts\txt_end.gml</script>
       <script>scripts\txt_edge.gml</script>
       <script>scripts\txt_start.gml</script>
       <script>scripts\txt_drink1.gml</script>
@@ -235,22 +236,20 @@
     <room>rooms\title</room>
     <room>rooms\cavern</room>
     <room>rooms\mountain_trail</room>
-    <room>rooms\sanzu</room>
     <room>rooms\mountain2</room>
     <room>rooms\mountain3</room>
     <room>rooms\mountain4</room>
-    <room>rooms\sanzu</room>
     <room>rooms\forest_path</room>
     <room>rooms\foresthree</room>
     <room>rooms\fourest</room>
     <room>rooms\fivest</room>
     <room>rooms\sixest</room>
     <room>rooms\reconsideration</room>
+    <room>rooms\sanzu</room>
+    <room>rooms\final_room</room>
     <room>rooms\the_void</room>
     <room>rooms\hitbox_maker</room>
     <room>rooms\template</room>
-    <room>rooms\final_room</room>
-    <room>rooms\sanzu</room>
     <room>rooms\die</room>
   </rooms>
   <help>

@@ -252,10 +252,7 @@ draw_text(30, 70, y);
 draw_text(30,100, vspd);
 draw_text(30,130,aerial);*/
 
-var i;
-for (i=0; i&lt;=hp; i++) {
-    draw_sprite(s_heart, 0, view_xview+i*64, view_yview);
-}
+
 </string>
           </argument>
         </arguments>
@@ -284,6 +281,10 @@ draw_set_alpha(0.1); //.failed attempt at lighting, maybe some other time.
 draw_set_color(c_white);
 draw_circle(x,y,100,false);
 draw_set_alpha(1.0);*/
+var i;
+for (i=0; i&lt;hp; i++) {
+    draw_sprite(s_heart, 0, view_xview[0]+(i*64), view_yview[0]);
+}
 </string>
           </argument>
         </arguments>
