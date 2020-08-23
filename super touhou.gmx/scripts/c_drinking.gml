@@ -45,61 +45,13 @@ if aerial = true {
 if !place_meeting(xx, yy + 1, o_collide) {
     vspd += grav;
     leniance -= .5;
-    hspd = lerp(hspd, 0, frict/2);
-    aerial = true;
-    grav = .14;
-} else {
-    leniance = 5;
-    acc = .3;
-    sprite_index = ground;
-    hspd = lerp(hspd, 0, frict);
-    aerial = false; 
-    yy = floor(yy);
-    vspd = 0;
-}
-
-if place_meeting(xx, yy + vspd, o_collide) {
-    while !place_meeting(xx, yy + sign(vspd), o_collide) {
-        yy += sign(vspd);
+sprite_index = s_death2
+    //image_speed = 0.25;
+    if(round(image_index) == sprite_get_number(sprite_index)-1 and sign(image_speed) != -1){
+        audio_play_sound(se_drinking, 0, false);
+        hp = 3;
+        image_speed = -0.25;
+        //state = c_standard;
     }
-    vspd = 0;
-    
-}
-
-
-//directions and sprites
-
-
-
-if(!aerial){
-    image_speed = abs(hspd/13);
-    if hspd == 0 {
-      image_index = 0;
-    }
-    
-}
-
-//the actual going
-
-
-
-
-    xx += hspd;
-
-    yy += vspd;
-//xx = floor(xx)
-yy = floor(yy)
-x = floor(xx);
-y = floor(yy);
-
-if(keyboard_check_pressed(vk_f1)){
-    c_hitbox_create(id,"test");
-}
-
-//sprite_index = s_drinking;
-
-if image_index = "whatever" {
-state = c_standard;
-}
 
 //image_speed = 1;
