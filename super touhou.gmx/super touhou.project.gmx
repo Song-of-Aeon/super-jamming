@@ -118,6 +118,10 @@
     <sprite>sprites\s_sans_facepic_left</sprite>
     <sprite>sprites\s_water</sprite>
     <sprite>sprites\sprite38</sprite>
+    <sprite>sprites\s_nue</sprite>
+    <sprite>sprites\s_hand</sprite>
+    <sprite>sprites\s_snake</sprite>
+    <sprite>sprites\s_snaking</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -214,10 +218,13 @@
     <object>objects\o_rock1</object>
     <object>objects\o_rock2</object>
     <object>objects\o_clouds</object>
+    <object>objects\o_snake</object>
+    <object>objects\o_hand</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\title</room>
     <room>rooms\cavern</room>
+    <room>rooms\sanzu</room>
     <room>rooms\mountain_trail</room>
     <room>rooms\mountain2</room>
     <room>rooms\mountain3</room>
@@ -228,7 +235,6 @@
     <room>rooms\fivest</room>
     <room>rooms\sixest</room>
     <room>rooms\reconsideration</room>
-    <room>rooms\sanzu</room>
     <room>rooms\the_void</room>
     <room>rooms\hitbox_maker</room>
     <room>rooms\template</room>

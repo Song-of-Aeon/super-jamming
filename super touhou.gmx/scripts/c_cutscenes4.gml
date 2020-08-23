@@ -17,6 +17,9 @@ switch goingdoing {
         
         break;
     case 2:
+        if !instance_exists(o_boss) {
+            instance_create(0, 160, o_boss);
+        }
         IMMORTALIZE.state = c_lock;
         o_view.target = o_boss;
         count++;
@@ -37,6 +40,7 @@ switch goingdoing {
         instance_destroy();
         IMMORTALIZE.state = c_standard; //c_drinking
         IMMORTALIZE.lv++;
+        o_boss.going = true;
         audio_play_sound(se_drinking, 0, false);
         hp = 3;
         count = 0;
