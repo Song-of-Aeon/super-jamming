@@ -70,7 +70,7 @@ if pulse {
         sprite_index = s_snake;
         direction = 0;
         factor = .1;
-    } else if factor &lt;= 3.4 {
+    } else if factor &lt;= 2 {
         direction = point_direction(x, y, IMMORTALIZE.x, IMMORTALIZE.y);
         image_angle = direction;
     }

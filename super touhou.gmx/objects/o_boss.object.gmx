@@ -28,7 +28,7 @@
             <string>hp = 30;
 count = 0;
 countwo = 0;
-hand = instance_create(x, y, o_hand);
+hand = instance_create(x, y+100, o_hand);
 snake = instance_create(x, y-73, o_snake);
 going = false;
 </string>
