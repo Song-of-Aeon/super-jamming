@@ -64,10 +64,10 @@ going = false;
                 o_snake.pulse = true;
                 break;
             case 2:
-                o_snake.pulse = true;
+                o_hand.pulse = true;
                 break;
             case 3:
-                o_snake.pulse = true;
+                o_hand.pulse = true;
                 break;
                 
         }

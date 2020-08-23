@@ -30,6 +30,9 @@ x -= 32;
 hspd = 0;
 pulse = false;
 factor = .1;
+ogx = x;
+ogy = y;
+count = 0;
 </string>
           </argument>
         </arguments>
@@ -53,26 +56,34 @@ factor = .1;
           <argument>
             <kind>1</kind>
             <string>
-if x &lt;= floatpoint {
-    hspd += .03;
-} else {
-    hspd -= .03;
-}
+
 x += hspd;
+y += vspd;
 
 if pulse {
     sprite_index = s_snaking;
     factor = factor*1.04;
     image_index = floor(factor);
-    
-    if factor &gt;= 8 {
-        pulse = false;
-        sprite_index = s_snake;
-        direction = 0;
-        factor = .1;
-    } else if factor &lt;= 2 {
-        direction = point_direction(x, y, IMMORTALIZE.x, IMMORTALIZE.y);
-        image_angle = direction;
+    if x &lt; IMMORTALIZE.x {
+        move_towards_point(IMMORTALIZE.x, 50, 30);
+    } else {
+        falling = true;
+    }
+    if falling {
+        vspd += .2;
+        if place_meeting(x, y, o_solid) {
+            vspd = 0;
+            count++;
+        }
+        if count &gt;= 90 {
+            
+        }
+    }
+} else {
+    if x &lt;= floatpoint {
+        hspd += .03;
+    } else {
+        hspd -= .03;
     }
 }
 </string>

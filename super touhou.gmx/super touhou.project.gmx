@@ -125,6 +125,7 @@
     <sprite>sprites\sprite43</sprite>
     <sprite>sprites\s_lightning</sprite>
     <sprite>sprites\s_fire</sprite>
+    <sprite>sprites\s_drinking</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
