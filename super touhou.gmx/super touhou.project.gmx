@@ -126,6 +126,7 @@
     <sprite>sprites\s_lightning</sprite>
     <sprite>sprites\s_fire</sprite>
     <sprite>sprites\s_drinking</sprite>
+    <sprite>sprites\s_hands</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -224,6 +225,8 @@
     <object>objects\o_clouds</object>
     <object>objects\o_snake</object>
     <object>objects\o_hand</object>
+    <object>objects\o_water</object>
+    <object>objects\o_hands</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\title</room>
