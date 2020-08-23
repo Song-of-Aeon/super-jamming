@@ -20,7 +20,7 @@ else{
 }
 //.snap to collider.
 if(grounded){
-    yy = collide.bbox_top-(sprite_height-sprite_get_yoffset(sprite_index));
+    yy = collide.bbox_top-(sprite_height- sprite_get_yoffset(sprite_index));
 }
 //lr collision
 
