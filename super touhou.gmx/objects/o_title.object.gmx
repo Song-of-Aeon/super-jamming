@@ -81,7 +81,7 @@ if jump {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(s_titlecursor, 0, 39, 77+position*123);
+            <string>draw_sprite(s_titlecursor, 0, 45, 127+position*93);
 </string>
           </argument>
         </arguments>
