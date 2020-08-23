@@ -32,6 +32,7 @@ hand = instance_create(x, y+100, o_hand);
 snake = instance_create(x, y-73, o_snake);
 going = false;
 hp2 = 10;
+pulse = false;
 </string>
           </argument>
         </arguments>
@@ -57,7 +58,7 @@ hp2 = 10;
             <string>if going {
     count++;
     if count &gt;= 300-abs(hp2-30) {
-        switch irandom(3) {
+        switch irandom(4) {
             case 0:
                 o_snake.pulse = true;
                 break;
@@ -70,6 +71,9 @@ hp2 = 10;
             case 3:
                 o_hand.pulse = true;
                 break;
+            case 4:
+                pulse = true;
+            break;
                 
         }
         audio_play_sound(se_growl, 0, 0);
@@ -81,6 +85,11 @@ if hp2 &lt;= 30 {
     global.endframe = surface_create(surface_get_width(application_surface),surface_get_height(application_surface));
     surface_copy(global.endframe,0,0,application_surface);
     room = final_room;
+}
+if(pulse){
+    sprite_index = s_fire;
+    image_speed = 0.2;
+    pulse = false;
 }
 </string>
           </argument>
