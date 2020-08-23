@@ -80,7 +80,7 @@ game_save("profile.dat");
         c_cutscenes1();
         break;
     case 1:
-        c_cutscenes2();
+        c_cutscenes4();
         break;
     case 2:
         c_cutscenes3();
