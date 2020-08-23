@@ -128,6 +128,7 @@
     <sprite>sprites\s_fire</sprite>
     <sprite>sprites\s_drinking</sprite>
     <sprite>sprites\s_hands</sprite>
+    <sprite>sprites\s_heart</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>

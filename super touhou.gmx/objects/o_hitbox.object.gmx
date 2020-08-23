@@ -121,10 +121,10 @@ if(progress &gt; activemax){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(active){
+            <string>/*if(active){
     image_alpha = 0.25;
     draw_self()
-}
+}dont think so shit shit fuck ass duck fart fuck shitter*/
 </string>
           </argument>
         </arguments>
