@@ -18,9 +18,9 @@ switch goingdoing {
         break;
     case 2:
         instance_destroy();
-        IMMORTALIZE.state = c_standard; //c_drinking
+        IMMORTALIZE.state = c_drinking;
         IMMORTALIZE.lv++;
-        audio_play_sound(se_drinking, 0, false);
+        //audio_play_sound(se_drinking, 0, false);
         hp = 6;
         count = 0;
         break;

@@ -230,4 +230,10 @@ if dash && lv >= 1 && !dashed {
 y = yy;
 x = xx;
 
+if(down and !aerial){
+    sprite_index = crouch;
+    image_index = 0;
+    hspd = 0;
+}
+
 //image_speed = 1;

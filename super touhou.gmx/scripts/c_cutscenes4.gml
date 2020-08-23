@@ -38,7 +38,7 @@ switch goingdoing {
         break;
     case 4:
         instance_destroy();
-        IMMORTALIZE.state = c_standard; //c_drinking
+        IMMORTALIZE.state = c_drinking;
         IMMORTALIZE.lv++;
         o_music.track = m_boss;
         o_boss.going = true;
