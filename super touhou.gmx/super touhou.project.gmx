@@ -228,8 +228,8 @@
   <rooms name="rooms">
     <room>rooms\title</room>
     <room>rooms\cavern</room>
-    <room>rooms\sanzu</room>
     <room>rooms\mountain_trail</room>
+    <room>rooms\sanzu</room>
     <room>rooms\mountain2</room>
     <room>rooms\mountain3</room>
     <room>rooms\mountain4</room>

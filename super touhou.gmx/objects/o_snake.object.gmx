@@ -52,7 +52,7 @@ factor = .1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = o_boss.x+54;
+            <string>x = o_boss.x+84;
 if y &lt;= floatpoint {
     vspd += .03;
 } else {

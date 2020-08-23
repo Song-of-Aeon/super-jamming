@@ -31,6 +31,7 @@ countwo = 0;
 hand = instance_create(x, y+100, o_hand);
 snake = instance_create(x, y-73, o_snake);
 going = false;
+hp2 = 30;
 </string>
           </argument>
         </arguments>
@@ -55,7 +56,7 @@ going = false;
             <kind>1</kind>
             <string>if going {
     count++;
-    if count &gt;= 300-abs(hp-30) {
+    if count &gt;= 300-abs(hp2-30) {
         switch irandom(3) {
             case 0:
                 o_snake.pulse = true;
@@ -73,6 +74,10 @@ going = false;
         }
         count = 0;
     }
+}
+hp2 = hp+o_hand.hp;
+if hp2 &lt;= 30 {
+    
 }
 </string>
           </argument>

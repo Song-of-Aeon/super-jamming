@@ -40,6 +40,7 @@ switch goingdoing {
         instance_destroy();
         IMMORTALIZE.state = c_standard; //c_drinking
         IMMORTALIZE.lv++;
+        o_music.track = m_boss;
         o_boss.going = true;
         audio_play_sound(se_drinking, 0, false);
         hp = 3;
