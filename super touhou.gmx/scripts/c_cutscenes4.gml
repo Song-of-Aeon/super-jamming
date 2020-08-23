@@ -17,6 +17,7 @@ switch goingdoing {
         
         break;
     case 2:
+        instance_create(300,300,o_boss);
         IMMORTALIZE.state = c_lock;
         o_view.target = o_boss;
         count++;
