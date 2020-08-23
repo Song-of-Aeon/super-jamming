@@ -17,13 +17,9 @@ switch goingdoing {
         
         break;
     case 2:
-<<<<<<< HEAD
         if !instance_exists(o_boss) {
             instance_create(0, 160, o_boss);
         }
-=======
-        instance_create(300,300,o_boss);
->>>>>>> master
         IMMORTALIZE.state = c_lock;
         o_view.target = o_boss;
         count++;

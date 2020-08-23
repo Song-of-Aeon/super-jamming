@@ -62,15 +62,17 @@ y += vspd;
 
 if pulse {
     sprite_index = s_snaking;
-    factor = factor*1.1;
+    factor = factor*1.04;
     image_index = floor(factor);
-    direction = point_direction(x, y, IMMORTALIZE.x, IMMORTALIZE.y);
-    image_angle = direction;
+    
     if factor &gt;= 8 {
         pulse = false;
         sprite_index = s_snake;
         direction = 0;
         factor = .1;
+    } else if factor &lt;= 3.4 {
+        direction = point_direction(x, y, IMMORTALIZE.x, IMMORTALIZE.y);
+        image_angle = direction;
     }
 }
 </string>
