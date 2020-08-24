@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>instance_deactivate_all(true);
 alpha = 1;
+count = 0;
 </string>
           </argument>
         </arguments>
@@ -52,6 +53,13 @@ alpha = 1;
             <string>draw_set_alpha(alpha);
 draw_surface_stretched(global.endframe,0,0,640,360);
 alpha -= 0.01;
+count++;
+if alpha &lt;= 0 {
+    instance_destroy();
+    with instance_create(300, 100, o_textbox) {
+        txt_end();
+    }
+}
 </string>
           </argument>
         </arguments>
