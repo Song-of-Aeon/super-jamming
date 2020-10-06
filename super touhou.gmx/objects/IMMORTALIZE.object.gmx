@@ -282,9 +282,7 @@ draw_set_color(c_white);
 draw_circle(x,y,100,false);
 draw_set_alpha(1.0);*/
 var i;
-for (i=0; i&lt;hp; i++) {
-    draw_sprite(s_heart, 0, view_xview[0]+(i*64), view_yview[0]);
-}
+
 </string>
           </argument>
         </arguments>

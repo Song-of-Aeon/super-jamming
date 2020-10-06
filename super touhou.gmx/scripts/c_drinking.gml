@@ -5,5 +5,6 @@ if(image_index = 0){
 }
 if(round(image_index) == sprite_get_number(sprite_index)-1){
     state = c_standard;
+    IMMORTALIZE.hp = 3+lv;
 }
 

@@ -21,7 +21,6 @@ switch goingdoing {
         IMMORTALIZE.state = c_drinking;
         //audio_play_sound(se_drinking, 0, false); //.c_drinking already dose this
         IMMORTALIZE.lv++;
-        hp = 4;
         count = 0;
         break;
 }
