@@ -95,6 +95,7 @@ if(progress &gt; activemax){
         hspd = 90/distance_to_point(IMMORTALIZE.x, IMMORTALIZE.y) * -(IMMORTALIZE.dir-1);
         hp--;
     }
+    console_log("hit");
     audio_play_sound(se_hit, 0, false);
     instance_destroy();
 }

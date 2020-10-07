@@ -95,6 +95,7 @@
     <sprite>sprites\s_neutral2</sprite>
     <sprite>sprites\s_attack2</sprite>
     <sprite>sprites\s_firespirit</sprite>
+    <sprite>sprites\s_diffspirit</sprite>
     <sprite>sprites\s_heartguy</sprite>
     <sprite>sprites\s_fairy</sprite>
     <sprite>sprites\s_titlecursor</sprite>

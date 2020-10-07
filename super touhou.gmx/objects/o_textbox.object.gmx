@@ -66,7 +66,9 @@ choiceat[0] = "";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>o_cutscene.goingdoing++;
+            <string>if instance_exists(o_cutscene) {
+    o_cutscene.goingdoing++;
+}
 </string>
           </argument>
         </arguments>
@@ -118,7 +120,9 @@ if (characters &lt; message_length) &amp;&amp; choosing = 0 {
             message_length = string_length(message[message_current]);
             characters = 0;
             message_draw = "";
-            IMMORTALIZE.state = c_lock;
+            if instance_exists(0) {
+                IMMORTALIZE.state = c_lock;
+            }
         } else { 
             instance_destroy();
             

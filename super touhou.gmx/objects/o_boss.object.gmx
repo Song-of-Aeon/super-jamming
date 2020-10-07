@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = 10;
+            <string>hp = 13;
 count = 0;
 countwo = 0;
 hand = instance_create(x, y+100, o_hand);
@@ -33,6 +33,7 @@ snake = instance_create(x, y-73, o_snake);
 going = false;
 hp2 = 10;
 pulse = false;
+pulse2 = false;
 </string>
           </argument>
         </arguments>
@@ -58,22 +59,19 @@ pulse = false;
             <string>if going {
     count++;
     if count &gt;= 300-abs(hp2-30) {
-        switch irandom(4) {
+        switch irandom(3) {
             case 0:
                 o_snake.pulse = true;
                 break;
             case 1:
-                o_snake.pulse = true;
+                o_hand.pulse = true;
                 break;
             case 2:
-                o_hand.pulse = true;
+                pulse = true;
                 break;
             case 3:
-                o_hand.pulse = true;
+                pulse2 = true;
                 break;
-            case 4:
-                pulse = true;
-            break;
                 
         }
         audio_play_sound(se_growl, 0, 0);
@@ -90,6 +88,18 @@ if(pulse){
     sprite_index = s_fire;
     image_speed = 0.2;
     pulse = false;
+}
+
+if pulse2 {
+    sprite_index = s_lightning;
+    image_speed = 0.2;
+    pulse = false;
+    pulse2 = false;
+}
+if image_index != s_nue {
+    if(round(image_index) == sprite_get_number(sprite_index)-1) {
+        sprite_index = s_nue;
+    }
 }
 </string>
           </argument>

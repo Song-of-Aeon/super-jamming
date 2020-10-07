@@ -87,7 +87,8 @@ if(image_index == sprite_get_number(sprite_index)-1){
     alpha = 1;
     if jump{
         audio_play_sound(se_yes, 0, false);
-        game_load("profile.dat");
+        //game_load("profile.dat");
+        game_restart();
     }
 }
 

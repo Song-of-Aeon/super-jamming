@@ -1,7 +1,7 @@
 ///txt_
 //depending on if the message[] = is prefacing it, you have | <   this  > | much space
 //and five lines to work with
-message[0] = "...This stuff is incredible.";
+message[0] = "...This magic is incredible.";
 message[1] = "But it's not enough.
 I need more power to survive.";
 message[2] = "Will it do even more if I drink again?";

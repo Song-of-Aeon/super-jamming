@@ -103,7 +103,7 @@ if image_index = 0 {
         hspd = hspd*1.5;
         vspd -= 1.5;
         thebounce = true;
-        console_log("bounced");
+        //console_log("bounced");
     } else if lv <= 2 {
         hspd = 0;
     }

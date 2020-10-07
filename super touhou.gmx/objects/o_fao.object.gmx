@@ -61,7 +61,8 @@ if image_alpha &gt;= 1 { //fuck you
             IMMORTALIZE.yy = global.goingy;
             if IMMORTALIZE.state = c_death {
                 if count &gt;= 120 {
-                    game_load("profile.dat");
+                    //game_load("profile.dat");
+                    game_restart();
                 }
                 exit;
             }
