@@ -143,7 +143,7 @@ if up || down {
     }
 }
 if choosing = 1 {
-    if keyboard_check_pressed(ord('S')) {
+    if jump {
         choosing = 0;
         savedpoint = 0;
         message_current = choiceoutcome[choiceno*2+chooser];

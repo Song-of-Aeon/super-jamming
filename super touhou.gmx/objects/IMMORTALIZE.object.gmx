@@ -114,12 +114,7 @@ inv = false;
 hput = right - left;
 vput = down - up;
 script_execute(state);
-if(keyboard_check(vk_f2)){
-size/=1.2;
-}
-if(keyboard_check(vk_f3)){
-size*=1.2;
-}
+
 
 maxhspd = 1.65+lv/.75;
 maxvspd = 6;
@@ -218,12 +213,6 @@ surface_free(surf);*/
           <argument>
             <kind>1</kind>
             <string>//draw_background(0,0,0);
-if keyboard_check_pressed(ord("K")) {
-    lv++;
-}
-if keyboard_check_pressed(ord("L")) {
-    lv--;
-}
 </string>
           </argument>
         </arguments>

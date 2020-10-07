@@ -196,9 +196,7 @@ if place_meeting(x, y, o_damage) && !inv {
 yy = ceil(yy)
 
 
-if(keyboard_check_pressed(vk_f1)){
-    c_hitbox_create(id,"test");
-}
+
 
 
 
