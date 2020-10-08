@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = 13;
+            <string>hp = 24;
 count = 0;
 countwo = 0;
 hand = instance_create(x, y+100, o_hand);
